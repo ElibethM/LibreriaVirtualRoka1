@@ -1,0 +1,35 @@
+<center><h1>Listado de  Libros</h1></center>
+
+<center><table>
+  <thead>
+    <tr>
+      <th>Isbn</th>
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th>Editorial</th>
+      <th>Precio</th>
+      <th>Existencias</th>
+      <th colspan="30"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.isbn %></td>
+        <td><%= book.titulo %></td>
+        <td><%= book.autor %></td>
+        <td><%= book.editorial %></td>
+        <td><%= book.precio %></td>
+        <td><%= book.existencias %></td>
+        <td><%= link_to 'Ver', book %></td>
+        <td><%= link_to 'Editar', edit_book_path(book) %></td>
+        <td><%= link_to 'Eliminar', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table></center>
+
+<br>
+
+<center><%= link_to 'Nuevo Libro', new_book_path %></center>

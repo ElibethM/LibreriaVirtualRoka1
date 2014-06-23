@@ -1,0 +1,27 @@
+<CENTER><h1>Listado de Ventas</h1></CENTER>
+
+<CENTER><table>
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Fechaventa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td><%= sale.client_id %></td>
+        <td><%= sale.fechaVenta %></td>
+        <td><%= link_to 'Ver', sale %></td>
+        <td><%= link_to 'Editar', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Eliminar', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table></CENTER>
+
+<br>
+
+<CENTER><%= link_to 'Nueva Venta', new_sale_path %></CENTER>

@@ -1,0 +1,1259 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'less' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'less', null ]
+6 verbose cache add name=undefined spec="less" args=["less",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'less',
+7 verbose parsed url   path: 'less',
+7 verbose parsed url   href: 'less' }
+8 silly lockFile 0b439cf4-less less
+9 verbose lock less /home/elibeth/.npm/0b439cf4-less.lock
+10 silly lockFile 0b439cf4-less less
+11 silly lockFile 0b439cf4-less less
+12 verbose addNamed [ 'less', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e13833ab-less less@
+15 verbose lock less@ /home/elibeth/.npm/e13833ab-less.lock
+16 silly addNameRange { name: 'less', range: '*', hasData: false }
+17 verbose url raw less
+18 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+19 verbose url resolved https://registry.npmjs.org/less
+20 info trying registry request attempt 1 at 19:25:47
+21 http GET https://registry.npmjs.org/less
+22 http 200 https://registry.npmjs.org/less
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Tue, 17 Jun 2014 00:25:47 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"5387751T4WTLGKMDSYL1HDDEZ"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=30',
+23 silly registry.get     'content-length': '59857',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '126',
+23 silly registry.get     'x-served-by': 'cache-lax1424-LAX',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1402964747.729763,VS0,VE48',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'less', range: '*', hasData: true }
+25 silly addNameRange versions [ 'less',
+25 silly addNameRange   [ '1.0.10',
+25 silly addNameRange     '1.0.11',
+25 silly addNameRange     '1.0.14',
+25 silly addNameRange     '1.0.18',
+25 silly addNameRange     '1.0.19',
+25 silly addNameRange     '1.0.21',
+25 silly addNameRange     '1.0.32',
+25 silly addNameRange     '1.0.36',
+25 silly addNameRange     '1.0.5',
+25 silly addNameRange     '1.0.40',
+25 silly addNameRange     '1.0.41',
+25 silly addNameRange     '1.0.44',
+25 silly addNameRange     '1.1.0',
+25 silly addNameRange     '1.1.1',
+25 silly addNameRange     '1.1.2',
+25 silly addNameRange     '1.1.4',
+25 silly addNameRange     '1.1.5',
+25 silly addNameRange     '1.1.6',
+25 silly addNameRange     '1.2.0',
+25 silly addNameRange     '1.2.1',
+25 silly addNameRange     '1.2.2',
+25 silly addNameRange     '1.3.0',
+25 silly addNameRange     '1.3.1',
+25 silly addNameRange     '1.3.2',
+25 silly addNameRange     '1.3.3',
+25 silly addNameRange     '1.4.0-b1',
+25 silly addNameRange     '1.4.0-b2',
+25 silly addNameRange     '1.4.0-b3',
+25 silly addNameRange     '1.4.0-b4',
+25 silly addNameRange     '1.4.0',
+25 silly addNameRange     '1.4.1',
+25 silly addNameRange     '1.4.2',
+25 silly addNameRange     '1.5.0-b1',
+25 silly addNameRange     '1.5.0-b2',
+25 silly addNameRange     '1.5.0-b3',
+25 silly addNameRange     '1.5.0-b4',
+25 silly addNameRange     '1.5.0',
+25 silly addNameRange     '1.5.1',
+25 silly addNameRange     '1.6.0',
+25 silly addNameRange     '1.6.1',
+25 silly addNameRange     '1.6.2',
+25 silly addNameRange     '1.6.3',
+25 silly addNameRange     '1.7.0',
+25 silly addNameRange     '1.7.1' ] ]
+26 verbose addNamed [ 'less', '1.7.1' ]
+27 verbose addNamed [ '1.7.1', '1.7.1' ]
+28 silly lockFile 98be6ecf-less-1-7-1 less@1.7.1
+29 verbose lock less@1.7.1 /home/elibeth/.npm/98be6ecf-less-1-7-1.lock
+30 silly lockFile 7673fa21-ry-npmjs-org-less-less-1-7-1-tgz https://registry.npmjs.org/less/-/less-1.7.1.tgz
+31 verbose lock https://registry.npmjs.org/less/-/less-1.7.1.tgz /home/elibeth/.npm/7673fa21-ry-npmjs-org-less-less-1-7-1-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/less/-/less-1.7.1.tgz',
+32 verbose addRemoteTarball   '6f5580029b52c3ac590e85e2b079827a66f6cc74' ]
+33 info retry fetch attempt 1 at 19:25:48
+34 verbose fetch to= /home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz
+35 http GET https://registry.npmjs.org/less/-/less-1.7.1.tgz
+36 http 200 https://registry.npmjs.org/less/-/less-1.7.1.tgz
+37 verbose tar unpack /home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz
+38 silly lockFile 8c5a255d-e-elibeth-npm-less-1-7-1-package tar:///home/elibeth/.npm/less/1.7.1/package
+39 verbose lock tar:///home/elibeth/.npm/less/1.7.1/package /home/elibeth/.npm/8c5a255d-e-elibeth-npm-less-1-7-1-package.lock
+40 silly lockFile 5d6b6c45-48017-0-1256138936150819-tmp-tgz tar:///home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz
+41 verbose lock tar:///home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz /home/elibeth/.npm/5d6b6c45-48017-0-1256138936150819-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+45 silly gunzTarPerm extractEntry .npmignore
+46 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+49 silly gunzTarPerm extractEntry LICENSE
+50 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+51 silly gunzTarPerm extractEntry Gruntfile.js
+52 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+53 silly gunzTarPerm extractEntry dist/less-1.1.0.js
+54 silly gunzTarPerm modified mode [ 'dist/less-1.1.0.js', 438, 420 ]
+55 silly gunzTarPerm extractEntry dist/less-1.4.0.js
+56 silly gunzTarPerm modified mode [ 'dist/less-1.4.0.js', 438, 420 ]
+57 silly gunzTarPerm extractEntry dist/less-1.4.0.min.js
+58 silly gunzTarPerm modified mode [ 'dist/less-1.4.0.min.js', 438, 420 ]
+59 silly gunzTarPerm extractEntry dist/less-1.4.1.js
+60 silly gunzTarPerm modified mode [ 'dist/less-1.4.1.js', 438, 420 ]
+61 silly gunzTarPerm extractEntry dist/less-1.4.0-beta.min.js
+62 silly gunzTarPerm modified mode [ 'dist/less-1.4.0-beta.min.js', 438, 420 ]
+63 silly gunzTarPerm extractEntry dist/less-1.4.2.js
+64 silly gunzTarPerm modified mode [ 'dist/less-1.4.2.js', 438, 420 ]
+65 silly gunzTarPerm extractEntry dist/less-1.4.2.min.js
+66 silly gunzTarPerm modified mode [ 'dist/less-1.4.2.min.js', 438, 420 ]
+67 silly gunzTarPerm extractEntry dist/less-1.5.0.js
+68 silly gunzTarPerm modified mode [ 'dist/less-1.5.0.js', 438, 420 ]
+69 silly gunzTarPerm extractEntry dist/less-1.5.0.min.js
+70 silly gunzTarPerm modified mode [ 'dist/less-1.5.0.min.js', 438, 420 ]
+71 silly gunzTarPerm extractEntry dist/less-1.5.1.js
+72 silly gunzTarPerm modified mode [ 'dist/less-1.5.1.js', 438, 420 ]
+73 silly gunzTarPerm extractEntry dist/less-1.4.0-beta.js
+74 silly gunzTarPerm modified mode [ 'dist/less-1.4.0-beta.js', 438, 420 ]
+75 silly gunzTarPerm extractEntry dist/less-1.5.1.min.js
+76 silly gunzTarPerm modified mode [ 'dist/less-1.5.1.min.js', 438, 420 ]
+77 silly gunzTarPerm extractEntry dist/less-1.3.3.min.js
+78 silly gunzTarPerm modified mode [ 'dist/less-1.3.3.min.js', 438, 420 ]
+79 silly gunzTarPerm extractEntry dist/less-1.6.0.js
+80 silly gunzTarPerm modified mode [ 'dist/less-1.6.0.js', 438, 420 ]
+81 silly gunzTarPerm extractEntry dist/less-1.3.3.js
+82 silly gunzTarPerm modified mode [ 'dist/less-1.3.3.js', 438, 420 ]
+83 silly gunzTarPerm extractEntry dist/less-1.6.0.min.js
+84 silly gunzTarPerm modified mode [ 'dist/less-1.6.0.min.js', 438, 420 ]
+85 silly gunzTarPerm extractEntry dist/less-1.3.2.min.js
+86 silly gunzTarPerm modified mode [ 'dist/less-1.3.2.min.js', 438, 420 ]
+87 silly gunzTarPerm extractEntry dist/less-1.6.1.js
+88 silly gunzTarPerm modified mode [ 'dist/less-1.6.1.js', 438, 420 ]
+89 silly gunzTarPerm extractEntry dist/less-1.3.2.js
+90 silly gunzTarPerm modified mode [ 'dist/less-1.3.2.js', 438, 420 ]
+91 silly gunzTarPerm extractEntry dist/less-1.6.1.min.js
+92 silly gunzTarPerm modified mode [ 'dist/less-1.6.1.min.js', 438, 420 ]
+93 silly gunzTarPerm extractEntry dist/less-1.3.1.min.js
+94 silly gunzTarPerm modified mode [ 'dist/less-1.3.1.min.js', 438, 420 ]
+95 silly gunzTarPerm extractEntry dist/less-1.6.2.js
+96 silly gunzTarPerm modified mode [ 'dist/less-1.6.2.js', 438, 420 ]
+97 silly gunzTarPerm extractEntry dist/less-1.3.1.js
+98 silly gunzTarPerm modified mode [ 'dist/less-1.3.1.js', 438, 420 ]
+99 silly gunzTarPerm extractEntry dist/less-1.6.2.min.js
+100 silly gunzTarPerm modified mode [ 'dist/less-1.6.2.min.js', 438, 420 ]
+101 silly gunzTarPerm extractEntry dist/less-1.3.0.min.js
+102 silly gunzTarPerm modified mode [ 'dist/less-1.3.0.min.js', 438, 420 ]
+103 silly gunzTarPerm extractEntry dist/less-1.6.3.js
+104 silly gunzTarPerm modified mode [ 'dist/less-1.6.3.js', 438, 420 ]
+105 silly gunzTarPerm extractEntry dist/less-1.3.0.js
+106 silly gunzTarPerm modified mode [ 'dist/less-1.3.0.js', 438, 420 ]
+107 silly gunzTarPerm extractEntry dist/less-1.6.3.min.js
+108 silly gunzTarPerm modified mode [ 'dist/less-1.6.3.min.js', 438, 420 ]
+109 silly gunzTarPerm extractEntry dist/less-1.2.2.min.js
+110 silly gunzTarPerm modified mode [ 'dist/less-1.2.2.min.js', 438, 420 ]
+111 silly gunzTarPerm extractEntry dist/less-1.7.0.js
+112 silly gunzTarPerm modified mode [ 'dist/less-1.7.0.js', 438, 420 ]
+113 silly gunzTarPerm extractEntry dist/less-1.2.2.js
+114 silly gunzTarPerm modified mode [ 'dist/less-1.2.2.js', 438, 420 ]
+115 silly gunzTarPerm extractEntry dist/less-1.7.0.min.js
+116 silly gunzTarPerm modified mode [ 'dist/less-1.7.0.min.js', 438, 420 ]
+117 silly gunzTarPerm extractEntry dist/less-1.2.1.min.js
+118 silly gunzTarPerm modified mode [ 'dist/less-1.2.1.min.js', 438, 420 ]
+119 silly gunzTarPerm extractEntry dist/less-1.7.1.js
+120 silly gunzTarPerm modified mode [ 'dist/less-1.7.1.js', 438, 420 ]
+121 silly gunzTarPerm extractEntry dist/less-1.2.1.js
+122 silly gunzTarPerm modified mode [ 'dist/less-1.2.1.js', 438, 420 ]
+123 silly gunzTarPerm extractEntry dist/less-1.7.1.min.js
+124 silly gunzTarPerm modified mode [ 'dist/less-1.7.1.min.js', 438, 420 ]
+125 silly gunzTarPerm extractEntry dist/less-1.2.0.min.js
+126 silly gunzTarPerm modified mode [ 'dist/less-1.2.0.min.js', 438, 420 ]
+127 silly gunzTarPerm extractEntry dist/less-rhino-1.1.3.js
+128 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.1.3.js', 438, 420 ]
+129 silly gunzTarPerm extractEntry dist/less-1.2.0.js
+130 silly gunzTarPerm modified mode [ 'dist/less-1.2.0.js', 438, 420 ]
+131 silly gunzTarPerm extractEntry dist/less-rhino-1.1.5.js
+132 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.1.5.js', 438, 420 ]
+133 silly gunzTarPerm extractEntry dist/less-1.1.6.min.js
+134 silly gunzTarPerm modified mode [ 'dist/less-1.1.6.min.js', 438, 420 ]
+135 silly gunzTarPerm extractEntry dist/less-rhino-1.3.1.js
+136 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.3.1.js', 438, 420 ]
+137 silly gunzTarPerm extractEntry dist/less-1.1.6.js
+138 silly gunzTarPerm modified mode [ 'dist/less-1.1.6.js', 438, 420 ]
+139 silly gunzTarPerm extractEntry dist/less-rhino-1.3.2.js
+140 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.3.2.js', 438, 420 ]
+141 silly gunzTarPerm extractEntry dist/less-1.1.5.min.js
+142 silly gunzTarPerm modified mode [ 'dist/less-1.1.5.min.js', 438, 420 ]
+143 silly gunzTarPerm extractEntry dist/less-rhino-1.3.3.js
+144 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.3.3.js', 438, 420 ]
+145 silly gunzTarPerm extractEntry dist/less-1.1.5.js
+146 silly gunzTarPerm modified mode [ 'dist/less-1.1.5.js', 438, 420 ]
+147 silly gunzTarPerm extractEntry dist/less-rhino-1.4.0.js
+148 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.4.0.js', 438, 420 ]
+149 silly gunzTarPerm extractEntry dist/less-1.1.4.min.js
+150 silly gunzTarPerm modified mode [ 'dist/less-1.1.4.min.js', 438, 420 ]
+151 silly gunzTarPerm extractEntry dist/less-rhino-1.5.1.js
+152 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.5.1.js', 438, 420 ]
+153 silly gunzTarPerm extractEntry dist/less-1.1.4.js
+154 silly gunzTarPerm modified mode [ 'dist/less-1.1.4.js', 438, 420 ]
+155 silly gunzTarPerm extractEntry dist/less-rhino-1.6.2.js
+156 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.6.2.js', 438, 420 ]
+157 silly gunzTarPerm extractEntry dist/less-1.1.3.min.js
+158 silly gunzTarPerm modified mode [ 'dist/less-1.1.3.min.js', 438, 420 ]
+159 silly gunzTarPerm extractEntry dist/less-rhino-1.6.3.js
+160 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.6.3.js', 438, 420 ]
+161 silly gunzTarPerm extractEntry dist/less-1.1.3.js
+162 silly gunzTarPerm modified mode [ 'dist/less-1.1.3.js', 438, 420 ]
+163 silly gunzTarPerm extractEntry dist/less-rhino-1.7.0.js
+164 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.7.0.js', 438, 420 ]
+165 silly gunzTarPerm extractEntry dist/less-1.1.2.min.js
+166 silly gunzTarPerm modified mode [ 'dist/less-1.1.2.min.js', 438, 420 ]
+167 silly gunzTarPerm extractEntry dist/less-rhino-1.7.1.js
+168 silly gunzTarPerm modified mode [ 'dist/less-rhino-1.7.1.js', 438, 420 ]
+169 silly gunzTarPerm extractEntry dist/less-1.1.2.js
+170 silly gunzTarPerm modified mode [ 'dist/less-1.1.2.js', 438, 420 ]
+171 silly gunzTarPerm extractEntry dist/lessc-rhino-1.6.2.js
+172 silly gunzTarPerm modified mode [ 'dist/lessc-rhino-1.6.2.js', 438, 420 ]
+173 silly gunzTarPerm extractEntry dist/less-1.1.1.min.js
+174 silly gunzTarPerm modified mode [ 'dist/less-1.1.1.min.js', 438, 420 ]
+175 silly gunzTarPerm extractEntry dist/lessc-rhino-1.6.3.js
+176 silly gunzTarPerm modified mode [ 'dist/lessc-rhino-1.6.3.js', 438, 420 ]
+177 silly gunzTarPerm extractEntry dist/less-1.1.1.js
+178 silly gunzTarPerm modified mode [ 'dist/less-1.1.1.js', 438, 420 ]
+179 silly gunzTarPerm extractEntry dist/lessc-rhino-1.7.0.js
+180 silly gunzTarPerm modified mode [ 'dist/lessc-rhino-1.7.0.js', 438, 420 ]
+181 silly gunzTarPerm extractEntry dist/less-1.1.0.min.js
+182 silly gunzTarPerm modified mode [ 'dist/less-1.1.0.min.js', 438, 420 ]
+183 silly gunzTarPerm extractEntry dist/lessc-rhino-1.7.1.js
+184 silly gunzTarPerm modified mode [ 'dist/lessc-rhino-1.7.1.js', 438, 420 ]
+185 silly gunzTarPerm extractEntry dist/less-1.4.1.min.js
+186 silly gunzTarPerm modified mode [ 'dist/less-1.4.1.min.js', 438, 420 ]
+187 silly gunzTarPerm extractEntry bin/lessc
+188 silly gunzTarPerm modified mode [ 'bin/lessc', 438, 420 ]
+189 silly gunzTarPerm extractEntry bower.json
+190 silly gunzTarPerm modified mode [ 'bower.json', 438, 420 ]
+191 silly gunzTarPerm extractEntry build/README.md
+192 silly gunzTarPerm modified mode [ 'build/README.md', 438, 420 ]
+193 silly gunzTarPerm extractEntry build/amd.js
+194 silly gunzTarPerm modified mode [ 'build/amd.js', 438, 420 ]
+195 silly gunzTarPerm extractEntry build/browser-header.js
+196 silly gunzTarPerm modified mode [ 'build/browser-header.js', 438, 420 ]
+197 silly gunzTarPerm extractEntry build/require-rhino.js
+198 silly gunzTarPerm modified mode [ 'build/require-rhino.js', 438, 420 ]
+199 silly gunzTarPerm extractEntry build/require.js
+200 silly gunzTarPerm modified mode [ 'build/require.js', 438, 420 ]
+201 silly gunzTarPerm extractEntry build/rhino-header.js
+202 silly gunzTarPerm modified mode [ 'build/rhino-header.js', 438, 420 ]
+203 silly gunzTarPerm extractEntry build/rhino-modules.js
+204 silly gunzTarPerm modified mode [ 'build/rhino-modules.js', 438, 420 ]
+205 silly gunzTarPerm extractEntry build/build.yml
+206 silly gunzTarPerm modified mode [ 'build/build.yml', 438, 420 ]
+207 silly gunzTarPerm extractEntry build/tasks/.gitkeep
+208 silly gunzTarPerm modified mode [ 'build/tasks/.gitkeep', 438, 420 ]
+209 silly gunzTarPerm extractEntry build.gradle
+210 silly gunzTarPerm modified mode [ 'build.gradle', 438, 420 ]
+211 silly gunzTarPerm extractEntry CHANGELOG.md
+212 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+213 silly gunzTarPerm extractEntry CONTRIBUTING.md
+214 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 420 ]
+215 silly gunzTarPerm extractEntry .idea/libraries/sass_stdlib.xml
+216 silly gunzTarPerm modified mode [ '.idea/libraries/sass_stdlib.xml', 438, 420 ]
+217 silly gunzTarPerm extractEntry .idea/.name
+218 silly gunzTarPerm modified mode [ '.idea/.name', 438, 420 ]
+219 silly gunzTarPerm extractEntry .idea/inspectionProfiles/profiles_settings.xml
+220 silly gunzTarPerm modified mode [ '.idea/inspectionProfiles/profiles_settings.xml', 438, 420 ]
+221 silly gunzTarPerm extractEntry .idea/inspectionProfiles/Project_Default.xml
+222 silly gunzTarPerm modified mode [ '.idea/inspectionProfiles/Project_Default.xml', 438, 420 ]
+223 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+224 silly gunzTarPerm modified mode [ '.idea/jsLibraryMappings.xml', 438, 420 ]
+225 silly gunzTarPerm extractEntry .idea/jsLinters/jshint.xml
+226 silly gunzTarPerm modified mode [ '.idea/jsLinters/jshint.xml', 438, 420 ]
+227 silly gunzTarPerm extractEntry .idea/less.js.iml
+228 silly gunzTarPerm modified mode [ '.idea/less.js.iml', 438, 420 ]
+229 silly gunzTarPerm extractEntry .idea/encodings.xml
+230 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 438, 420 ]
+231 silly gunzTarPerm extractEntry .idea/misc.xml
+232 silly gunzTarPerm modified mode [ '.idea/misc.xml', 438, 420 ]
+233 silly gunzTarPerm extractEntry .idea/modules.xml
+234 silly gunzTarPerm modified mode [ '.idea/modules.xml', 438, 420 ]
+235 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+236 silly gunzTarPerm modified mode [ '.idea/scopes/scope_settings.xml', 438, 420 ]
+237 silly gunzTarPerm extractEntry .idea/vcs.xml
+238 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 438, 420 ]
+239 silly gunzTarPerm extractEntry .idea/workspace.xml
+240 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 438, 420 ]
+241 silly gunzTarPerm extractEntry gradle/wrapper/gradle-wrapper.jar
+242 silly gunzTarPerm modified mode [ 'gradle/wrapper/gradle-wrapper.jar', 438, 420 ]
+243 silly gunzTarPerm extractEntry gradle/wrapper/gradle-wrapper.properties
+244 silly gunzTarPerm modified mode [ 'gradle/wrapper/gradle-wrapper.properties', 438, 420 ]
+245 silly gunzTarPerm extractEntry gradlew
+246 silly gunzTarPerm modified mode [ 'gradlew', 438, 420 ]
+247 silly gunzTarPerm extractEntry gradlew.bat
+248 silly gunzTarPerm modified mode [ 'gradlew.bat', 438, 420 ]
+249 silly gunzTarPerm extractEntry .jshintrc
+250 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+251 silly gunzTarPerm extractEntry lib/less/browser.js
+252 silly gunzTarPerm modified mode [ 'lib/less/browser.js', 438, 420 ]
+253 silly gunzTarPerm extractEntry lib/less/fs.js
+254 silly gunzTarPerm modified mode [ 'lib/less/fs.js', 438, 420 ]
+255 silly gunzTarPerm extractEntry lib/less/functions.js
+256 silly gunzTarPerm modified mode [ 'lib/less/functions.js', 438, 420 ]
+257 silly gunzTarPerm extractEntry lib/less/import-visitor.js
+258 silly gunzTarPerm modified mode [ 'lib/less/import-visitor.js', 438, 420 ]
+259 silly gunzTarPerm extractEntry lib/less/extend-visitor.js
+260 silly gunzTarPerm modified mode [ 'lib/less/extend-visitor.js', 438, 420 ]
+261 silly gunzTarPerm extractEntry lib/less/colors.js
+262 silly gunzTarPerm modified mode [ 'lib/less/colors.js', 438, 420 ]
+263 silly gunzTarPerm extractEntry lib/less/lessc_helper.js
+264 silly gunzTarPerm modified mode [ 'lib/less/lessc_helper.js', 438, 420 ]
+265 silly gunzTarPerm extractEntry lib/less/parser.js
+266 silly gunzTarPerm modified mode [ 'lib/less/parser.js', 438, 420 ]
+267 silly gunzTarPerm extractEntry lib/less/rhino.js
+268 silly gunzTarPerm modified mode [ 'lib/less/rhino.js', 438, 420 ]
+269 silly gunzTarPerm extractEntry lib/less/source-map-output.js
+270 silly gunzTarPerm modified mode [ 'lib/less/source-map-output.js', 438, 420 ]
+271 silly gunzTarPerm extractEntry lib/less/env.js
+272 silly gunzTarPerm modified mode [ 'lib/less/env.js', 438, 420 ]
+273 silly gunzTarPerm extractEntry lib/less/to-css-visitor.js
+274 silly gunzTarPerm modified mode [ 'lib/less/to-css-visitor.js', 438, 420 ]
+275 silly gunzTarPerm extractEntry lib/less/encoder.js
+276 silly gunzTarPerm modified mode [ 'lib/less/encoder.js', 438, 420 ]
+277 silly gunzTarPerm extractEntry lib/less/tree.js
+278 silly gunzTarPerm modified mode [ 'lib/less/tree.js', 438, 420 ]
+279 silly gunzTarPerm extractEntry lib/less/index.js
+280 silly gunzTarPerm modified mode [ 'lib/less/index.js', 438, 420 ]
+281 silly gunzTarPerm extractEntry lib/less/visitor.js
+282 silly gunzTarPerm modified mode [ 'lib/less/visitor.js', 438, 420 ]
+283 silly gunzTarPerm extractEntry lib/less/join-selector-visitor.js
+284 silly gunzTarPerm modified mode [ 'lib/less/join-selector-visitor.js', 438, 420 ]
+285 silly gunzTarPerm extractEntry lib/less/tree/alpha.js
+286 silly gunzTarPerm modified mode [ 'lib/less/tree/alpha.js', 438, 420 ]
+287 silly gunzTarPerm extractEntry lib/less/tree/expression.js
+288 silly gunzTarPerm modified mode [ 'lib/less/tree/expression.js', 438, 420 ]
+289 silly gunzTarPerm extractEntry lib/less/tree/extend.js
+290 silly gunzTarPerm modified mode [ 'lib/less/tree/extend.js', 438, 420 ]
+291 silly gunzTarPerm extractEntry lib/less/tree/import.js
+292 silly gunzTarPerm modified mode [ 'lib/less/tree/import.js', 438, 420 ]
+293 silly gunzTarPerm extractEntry lib/less/tree/javascript.js
+294 silly gunzTarPerm modified mode [ 'lib/less/tree/javascript.js', 438, 420 ]
+295 silly gunzTarPerm extractEntry lib/less/tree/element.js
+296 silly gunzTarPerm modified mode [ 'lib/less/tree/element.js', 438, 420 ]
+297 silly gunzTarPerm extractEntry lib/less/tree/media.js
+298 silly gunzTarPerm modified mode [ 'lib/less/tree/media.js', 438, 420 ]
+299 silly gunzTarPerm extractEntry lib/less/tree/mixin.js
+300 silly gunzTarPerm modified mode [ 'lib/less/tree/mixin.js', 438, 420 ]
+301 silly gunzTarPerm extractEntry lib/less/tree/negative.js
+302 silly gunzTarPerm modified mode [ 'lib/less/tree/negative.js', 438, 420 ]
+303 silly gunzTarPerm extractEntry lib/less/tree/operation.js
+304 silly gunzTarPerm modified mode [ 'lib/less/tree/operation.js', 438, 420 ]
+305 silly gunzTarPerm extractEntry lib/less/tree/paren.js
+306 silly gunzTarPerm modified mode [ 'lib/less/tree/paren.js', 438, 420 ]
+307 silly gunzTarPerm extractEntry lib/less/tree/directive.js
+308 silly gunzTarPerm modified mode [ 'lib/less/tree/directive.js', 438, 420 ]
+309 silly gunzTarPerm extractEntry lib/less/tree/quoted.js
+310 silly gunzTarPerm modified mode [ 'lib/less/tree/quoted.js', 438, 420 ]
+311 silly gunzTarPerm extractEntry lib/less/tree/dimension.js
+312 silly gunzTarPerm modified mode [ 'lib/less/tree/dimension.js', 438, 420 ]
+313 silly gunzTarPerm extractEntry lib/less/tree/rule.js
+314 silly gunzTarPerm modified mode [ 'lib/less/tree/rule.js', 438, 420 ]
+315 silly gunzTarPerm extractEntry lib/less/tree/detached-ruleset.js
+316 silly gunzTarPerm modified mode [ 'lib/less/tree/detached-ruleset.js', 438, 420 ]
+317 silly gunzTarPerm extractEntry lib/less/tree/ruleset-call.js
+318 silly gunzTarPerm modified mode [ 'lib/less/tree/ruleset-call.js', 438, 420 ]
+319 silly gunzTarPerm extractEntry lib/less/tree/condition.js
+320 silly gunzTarPerm modified mode [ 'lib/less/tree/condition.js', 438, 420 ]
+321 silly gunzTarPerm extractEntry lib/less/tree/ruleset.js
+322 silly gunzTarPerm modified mode [ 'lib/less/tree/ruleset.js', 438, 420 ]
+323 silly gunzTarPerm extractEntry lib/less/tree/comment.js
+324 silly gunzTarPerm modified mode [ 'lib/less/tree/comment.js', 438, 420 ]
+325 silly gunzTarPerm extractEntry lib/less/tree/selector.js
+326 silly gunzTarPerm modified mode [ 'lib/less/tree/selector.js', 438, 420 ]
+327 silly gunzTarPerm extractEntry lib/less/tree/color.js
+328 silly gunzTarPerm modified mode [ 'lib/less/tree/color.js', 438, 420 ]
+329 silly gunzTarPerm extractEntry lib/less/tree/unicode-descriptor.js
+330 silly gunzTarPerm modified mode [ 'lib/less/tree/unicode-descriptor.js', 438, 420 ]
+331 silly gunzTarPerm extractEntry lib/less/tree/call.js
+332 silly gunzTarPerm modified mode [ 'lib/less/tree/call.js', 438, 420 ]
+333 silly gunzTarPerm extractEntry lib/less/tree/url.js
+334 silly gunzTarPerm modified mode [ 'lib/less/tree/url.js', 438, 420 ]
+335 silly gunzTarPerm extractEntry lib/less/tree/assignment.js
+336 silly gunzTarPerm modified mode [ 'lib/less/tree/assignment.js', 438, 420 ]
+337 silly gunzTarPerm extractEntry lib/less/tree/value.js
+338 silly gunzTarPerm modified mode [ 'lib/less/tree/value.js', 438, 420 ]
+339 silly gunzTarPerm extractEntry lib/less/tree/anonymous.js
+340 silly gunzTarPerm modified mode [ 'lib/less/tree/anonymous.js', 438, 420 ]
+341 silly gunzTarPerm extractEntry lib/less/tree/variable.js
+342 silly gunzTarPerm modified mode [ 'lib/less/tree/variable.js', 438, 420 ]
+343 silly gunzTarPerm extractEntry lib/less/tree/keyword.js
+344 silly gunzTarPerm modified mode [ 'lib/less/tree/keyword.js', 438, 420 ]
+345 silly gunzTarPerm extractEntry lib/source-map/source-map-0.1.31.js
+346 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-0.1.31.js', 438, 420 ]
+347 silly gunzTarPerm extractEntry lib/source-map/source-map-footer.js
+348 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-footer.js', 438, 420 ]
+349 silly gunzTarPerm extractEntry lib/source-map/source-map-header.js
+350 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-header.js', 438, 420 ]
+351 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/boot.js
+352 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/boot.js', 438, 420 ]
+353 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/es5-shim.js
+354 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/es5-shim.js', 438, 420 ]
+355 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/jasmine-helper.js
+356 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/jasmine-helper.js', 438, 420 ]
+357 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/jasmine-html.js
+358 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/jasmine-html.js', 438, 420 ]
+359 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/jasmine.js
+360 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/jasmine.js', 438, 420 ]
+361 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/phantom-polyfill.js
+362 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/phantom-polyfill.js', 438, 420 ]
+363 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/reporter.js
+364 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/reporter.js', 438, 420 ]
+365 silly gunzTarPerm extractEntry .grunt/grunt-contrib-jasmine/jasmine.css
+366 silly gunzTarPerm modified mode [ '.grunt/grunt-contrib-jasmine/jasmine.css', 438, 420 ]
+367 silly gunzTarPerm extractEntry .travis.yml
+368 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+369 silly gunzTarPerm extractEntry projectFilesBackup/.idea/libraries/sass_stdlib.xml
+370 silly gunzTarPerm modified mode [ 'projectFilesBackup/.idea/libraries/sass_stdlib.xml',
+370 silly gunzTarPerm   438,
+370 silly gunzTarPerm   420 ]
+371 silly gunzTarPerm extractEntry benchmark/less-benchmark.js
+372 silly gunzTarPerm modified mode [ 'benchmark/less-benchmark.js', 438, 420 ]
+373 silly gunzTarPerm extractEntry benchmark/benchmark.less
+374 silly gunzTarPerm modified mode [ 'benchmark/benchmark.less', 438, 420 ]
+375 silly gunzTarPerm extractEntry test/index.js
+376 silly gunzTarPerm modified mode [ 'test/index.js', 438, 420 ]
+377 silly gunzTarPerm extractEntry test/less-test.js
+378 silly gunzTarPerm modified mode [ 'test/less-test.js', 438, 420 ]
+379 silly gunzTarPerm extractEntry test/browser/common.js
+380 silly gunzTarPerm modified mode [ 'test/browser/common.js', 438, 420 ]
+381 silly gunzTarPerm extractEntry test/browser/runner-errors-options.js
+382 silly gunzTarPerm modified mode [ 'test/browser/runner-errors-options.js', 438, 420 ]
+383 silly gunzTarPerm extractEntry test/browser/runner-errors-spec.js
+384 silly gunzTarPerm modified mode [ 'test/browser/runner-errors-spec.js', 438, 420 ]
+385 silly gunzTarPerm extractEntry test/browser/runner-global-vars-options.js
+386 silly gunzTarPerm modified mode [ 'test/browser/runner-global-vars-options.js', 438, 420 ]
+387 silly gunzTarPerm extractEntry test/browser/runner-global-vars-spec.js
+388 silly gunzTarPerm modified mode [ 'test/browser/runner-global-vars-spec.js', 438, 420 ]
+389 silly gunzTarPerm extractEntry test/browser/runner-console-errors.js
+390 silly gunzTarPerm modified mode [ 'test/browser/runner-console-errors.js', 438, 420 ]
+391 silly gunzTarPerm extractEntry test/browser/runner-rootpath-relative-options.js
+392 silly gunzTarPerm modified mode [ 'test/browser/runner-rootpath-relative-options.js', 438, 420 ]
+393 silly gunzTarPerm extractEntry test/browser/runner-main-options.js
+394 silly gunzTarPerm modified mode [ 'test/browser/runner-main-options.js', 438, 420 ]
+395 silly gunzTarPerm extractEntry test/browser/runner-main-spec.js
+396 silly gunzTarPerm modified mode [ 'test/browser/runner-main-spec.js', 438, 420 ]
+397 silly gunzTarPerm extractEntry test/browser/runner-modify-vars-options.js
+398 silly gunzTarPerm modified mode [ 'test/browser/runner-modify-vars-options.js', 438, 420 ]
+399 silly gunzTarPerm extractEntry test/browser/runner-modify-vars-spec.js
+400 silly gunzTarPerm modified mode [ 'test/browser/runner-modify-vars-spec.js', 438, 420 ]
+401 silly gunzTarPerm extractEntry test/browser/runner-browser-spec.js
+402 silly gunzTarPerm modified mode [ 'test/browser/runner-browser-spec.js', 438, 420 ]
+403 silly gunzTarPerm extractEntry test/browser/runner-no-js-errors-options.js
+404 silly gunzTarPerm modified mode [ 'test/browser/runner-no-js-errors-options.js', 438, 420 ]
+405 silly gunzTarPerm extractEntry test/browser/runner-browser-options.js
+406 silly gunzTarPerm modified mode [ 'test/browser/runner-browser-options.js', 438, 420 ]
+407 silly gunzTarPerm extractEntry test/browser/runner-no-js-errors-spec.js
+408 silly gunzTarPerm modified mode [ 'test/browser/runner-no-js-errors-spec.js', 438, 420 ]
+409 silly gunzTarPerm extractEntry test/browser/phantom-runner.js
+410 silly gunzTarPerm modified mode [ 'test/browser/phantom-runner.js', 438, 420 ]
+411 silly gunzTarPerm extractEntry test/browser/runner-postProcessor-options.js
+412 silly gunzTarPerm modified mode [ 'test/browser/runner-postProcessor-options.js', 438, 420 ]
+413 silly gunzTarPerm extractEntry test/browser/less.js
+414 silly gunzTarPerm modified mode [ 'test/browser/less.js', 438, 420 ]
+415 silly gunzTarPerm extractEntry test/browser/runner-postProcessor.js
+416 silly gunzTarPerm modified mode [ 'test/browser/runner-postProcessor.js', 438, 420 ]
+417 silly gunzTarPerm extractEntry test/browser/runner-rootpath-relative-spec.js
+418 silly gunzTarPerm modified mode [ 'test/browser/runner-rootpath-relative-spec.js', 438, 420 ]
+419 silly gunzTarPerm extractEntry test/browser/runner-production-options.js
+420 silly gunzTarPerm modified mode [ 'test/browser/runner-production-options.js', 438, 420 ]
+421 silly gunzTarPerm extractEntry test/browser/jasmine.js
+422 silly gunzTarPerm modified mode [ 'test/browser/jasmine.js', 438, 420 ]
+423 silly gunzTarPerm extractEntry test/browser/runner-production-spec.js
+424 silly gunzTarPerm modified mode [ 'test/browser/runner-production-spec.js', 438, 420 ]
+425 silly gunzTarPerm extractEntry test/browser/runner-rootpath-spec.js
+426 silly gunzTarPerm modified mode [ 'test/browser/runner-rootpath-spec.js', 438, 420 ]
+427 silly gunzTarPerm extractEntry test/browser/runner-relative-urls-options.js
+428 silly gunzTarPerm modified mode [ 'test/browser/runner-relative-urls-options.js', 438, 420 ]
+429 silly gunzTarPerm extractEntry test/browser/jasmine-html.js
+430 silly gunzTarPerm modified mode [ 'test/browser/jasmine-html.js', 438, 420 ]
+431 silly gunzTarPerm extractEntry test/browser/runner-relative-urls-spec.js
+432 silly gunzTarPerm modified mode [ 'test/browser/runner-relative-urls-spec.js', 438, 420 ]
+433 silly gunzTarPerm extractEntry test/browser/es5.js
+434 silly gunzTarPerm modified mode [ 'test/browser/es5.js', 438, 420 ]
+435 silly gunzTarPerm extractEntry test/browser/runner-rootpath-options.js
+436 silly gunzTarPerm modified mode [ 'test/browser/runner-rootpath-options.js', 438, 420 ]
+437 silly gunzTarPerm extractEntry test/browser/runner-legacy-options.js
+438 silly gunzTarPerm modified mode [ 'test/browser/runner-legacy-options.js', 438, 420 ]
+439 silly gunzTarPerm extractEntry test/browser/runner-legacy-spec.js
+440 silly gunzTarPerm modified mode [ 'test/browser/runner-legacy-spec.js', 438, 420 ]
+441 silly gunzTarPerm extractEntry test/browser/css/global-vars/simple.css
+442 silly gunzTarPerm modified mode [ 'test/browser/css/global-vars/simple.css', 438, 420 ]
+443 silly gunzTarPerm extractEntry test/browser/css/modify-vars/simple.css
+444 silly gunzTarPerm modified mode [ 'test/browser/css/modify-vars/simple.css', 438, 420 ]
+445 silly gunzTarPerm extractEntry test/browser/css/postProcessor/postProcessor.css
+446 silly gunzTarPerm modified mode [ 'test/browser/css/postProcessor/postProcessor.css', 438, 420 ]
+447 silly gunzTarPerm extractEntry test/browser/css/relative-urls/urls.css
+448 silly gunzTarPerm modified mode [ 'test/browser/css/relative-urls/urls.css', 438, 420 ]
+449 silly gunzTarPerm extractEntry test/browser/css/rootpath/urls.css
+450 silly gunzTarPerm modified mode [ 'test/browser/css/rootpath/urls.css', 438, 420 ]
+451 silly gunzTarPerm extractEntry test/browser/css/rootpath-relative/urls.css
+452 silly gunzTarPerm modified mode [ 'test/browser/css/rootpath-relative/urls.css', 438, 420 ]
+453 silly gunzTarPerm extractEntry test/browser/css/urls.css
+454 silly gunzTarPerm modified mode [ 'test/browser/css/urls.css', 438, 420 ]
+455 silly gunzTarPerm extractEntry test/browser/less/console-errors/test-error.less
+456 silly gunzTarPerm modified mode [ 'test/browser/less/console-errors/test-error.less', 438, 420 ]
+457 silly gunzTarPerm extractEntry test/browser/less/console-errors/test-error.txt
+458 silly gunzTarPerm modified mode [ 'test/browser/less/console-errors/test-error.txt', 438, 420 ]
+459 silly gunzTarPerm extractEntry test/browser/less/global-vars/simple.less
+460 silly gunzTarPerm modified mode [ 'test/browser/less/global-vars/simple.less', 438, 420 ]
+461 silly gunzTarPerm extractEntry test/browser/less/imports/urls.less
+462 silly gunzTarPerm modified mode [ 'test/browser/less/imports/urls.less', 438, 420 ]
+463 silly gunzTarPerm extractEntry test/browser/less/imports/urls2.less
+464 silly gunzTarPerm modified mode [ 'test/browser/less/imports/urls2.less', 438, 420 ]
+465 silly gunzTarPerm extractEntry test/browser/less/modify-vars/imports/simple2.less
+466 silly gunzTarPerm modified mode [ 'test/browser/less/modify-vars/imports/simple2.less',
+466 silly gunzTarPerm   438,
+466 silly gunzTarPerm   420 ]
+467 silly gunzTarPerm extractEntry test/browser/less/modify-vars/simple.less
+468 silly gunzTarPerm modified mode [ 'test/browser/less/modify-vars/simple.less', 438, 420 ]
+469 silly gunzTarPerm extractEntry test/browser/less/postProcessor/postProcessor.less
+470 silly gunzTarPerm modified mode [ 'test/browser/less/postProcessor/postProcessor.less',
+470 silly gunzTarPerm   438,
+470 silly gunzTarPerm   420 ]
+471 silly gunzTarPerm extractEntry test/browser/less/relative-urls/urls.less
+472 silly gunzTarPerm modified mode [ 'test/browser/less/relative-urls/urls.less', 438, 420 ]
+473 silly gunzTarPerm extractEntry test/browser/less/rootpath/urls.less
+474 silly gunzTarPerm modified mode [ 'test/browser/less/rootpath/urls.less', 438, 420 ]
+475 silly gunzTarPerm extractEntry test/browser/less/rootpath-relative/urls.less
+476 silly gunzTarPerm modified mode [ 'test/browser/less/rootpath-relative/urls.less', 438, 420 ]
+477 silly gunzTarPerm extractEntry test/browser/less/urls.less
+478 silly gunzTarPerm modified mode [ 'test/browser/less/urls.less', 438, 420 ]
+479 silly gunzTarPerm extractEntry test/browser/jasmine.css
+480 silly gunzTarPerm modified mode [ 'test/browser/jasmine.css', 438, 420 ]
+481 silly gunzTarPerm extractEntry test/browser/test-runner-template.tmpl
+482 silly gunzTarPerm modified mode [ 'test/browser/test-runner-template.tmpl', 438, 420 ]
+483 silly gunzTarPerm extractEntry test/css/lazy-eval.css
+484 silly gunzTarPerm modified mode [ 'test/css/lazy-eval.css', 438, 420 ]
+485 silly gunzTarPerm extractEntry test/css/charsets.css
+486 silly gunzTarPerm modified mode [ 'test/css/charsets.css', 438, 420 ]
+487 silly gunzTarPerm extractEntry test/css/comments.css
+488 silly gunzTarPerm modified mode [ 'test/css/comments.css', 438, 420 ]
+489 silly gunzTarPerm extractEntry test/css/compression/compression.css
+490 silly gunzTarPerm modified mode [ 'test/css/compression/compression.css', 438, 420 ]
+491 silly gunzTarPerm extractEntry test/css/css-3.css
+492 silly gunzTarPerm modified mode [ 'test/css/css-3.css', 438, 420 ]
+493 silly gunzTarPerm extractEntry test/css/css-escapes.css
+494 silly gunzTarPerm modified mode [ 'test/css/css-escapes.css', 438, 420 ]
+495 silly gunzTarPerm extractEntry test/css/css-guards.css
+496 silly gunzTarPerm modified mode [ 'test/css/css-guards.css', 438, 420 ]
+497 silly gunzTarPerm extractEntry test/css/css.css
+498 silly gunzTarPerm modified mode [ 'test/css/css.css', 438, 420 ]
+499 silly gunzTarPerm extractEntry test/css/debug/linenumbers-all.css
+500 silly gunzTarPerm modified mode [ 'test/css/debug/linenumbers-all.css', 438, 420 ]
+501 silly gunzTarPerm extractEntry test/css/debug/linenumbers-comments.css
+502 silly gunzTarPerm modified mode [ 'test/css/debug/linenumbers-comments.css', 438, 420 ]
+503 silly gunzTarPerm extractEntry test/css/debug/linenumbers-mediaquery.css
+504 silly gunzTarPerm modified mode [ 'test/css/debug/linenumbers-mediaquery.css', 438, 420 ]
+505 silly gunzTarPerm extractEntry test/css/detached-rulesets.css
+506 silly gunzTarPerm modified mode [ 'test/css/detached-rulesets.css', 438, 420 ]
+507 silly gunzTarPerm extractEntry test/css/empty.css
+508 silly gunzTarPerm modified mode [ 'test/css/empty.css', 438, 420 ]
+509 silly gunzTarPerm extractEntry test/css/extend-chaining.css
+510 silly gunzTarPerm modified mode [ 'test/css/extend-chaining.css', 438, 420 ]
+511 silly gunzTarPerm extractEntry test/css/extend-clearfix.css
+512 silly gunzTarPerm modified mode [ 'test/css/extend-clearfix.css', 438, 420 ]
+513 silly gunzTarPerm extractEntry test/css/extend-exact.css
+514 silly gunzTarPerm modified mode [ 'test/css/extend-exact.css', 438, 420 ]
+515 silly gunzTarPerm extractEntry test/css/extend-media.css
+516 silly gunzTarPerm modified mode [ 'test/css/extend-media.css', 438, 420 ]
+517 silly gunzTarPerm extractEntry test/css/extend-nest.css
+518 silly gunzTarPerm modified mode [ 'test/css/extend-nest.css', 438, 420 ]
+519 silly gunzTarPerm extractEntry test/css/extend-selector.css
+520 silly gunzTarPerm modified mode [ 'test/css/extend-selector.css', 438, 420 ]
+521 silly gunzTarPerm extractEntry test/css/extend.css
+522 silly gunzTarPerm modified mode [ 'test/css/extend.css', 438, 420 ]
+523 silly gunzTarPerm extractEntry test/css/extract-and-length.css
+524 silly gunzTarPerm modified mode [ 'test/css/extract-and-length.css', 438, 420 ]
+525 silly gunzTarPerm extractEntry test/css/functions.css
+526 silly gunzTarPerm modified mode [ 'test/css/functions.css', 438, 420 ]
+527 silly gunzTarPerm extractEntry test/css/globalVars/extended.css
+528 silly gunzTarPerm modified mode [ 'test/css/globalVars/extended.css', 438, 420 ]
+529 silly gunzTarPerm extractEntry test/css/globalVars/simple.css
+530 silly gunzTarPerm modified mode [ 'test/css/globalVars/simple.css', 438, 420 ]
+531 silly gunzTarPerm extractEntry test/css/ie-filters.css
+532 silly gunzTarPerm modified mode [ 'test/css/ie-filters.css', 438, 420 ]
+533 silly gunzTarPerm extractEntry test/css/import-inline.css
+534 silly gunzTarPerm modified mode [ 'test/css/import-inline.css', 438, 420 ]
+535 silly gunzTarPerm extractEntry test/css/import-interpolation.css
+536 silly gunzTarPerm modified mode [ 'test/css/import-interpolation.css', 438, 420 ]
+537 silly gunzTarPerm extractEntry test/css/import-once.css
+538 silly gunzTarPerm modified mode [ 'test/css/import-once.css', 438, 420 ]
+539 silly gunzTarPerm extractEntry test/css/import-reference.css
+540 silly gunzTarPerm modified mode [ 'test/css/import-reference.css', 438, 420 ]
+541 silly gunzTarPerm extractEntry test/css/import.css
+542 silly gunzTarPerm modified mode [ 'test/css/import.css', 438, 420 ]
+543 silly gunzTarPerm extractEntry test/css/javascript.css
+544 silly gunzTarPerm modified mode [ 'test/css/javascript.css', 438, 420 ]
+545 silly gunzTarPerm extractEntry test/css/colors.css
+546 silly gunzTarPerm modified mode [ 'test/css/colors.css', 438, 420 ]
+547 silly gunzTarPerm extractEntry test/css/legacy/legacy.css
+548 silly gunzTarPerm modified mode [ 'test/css/legacy/legacy.css', 438, 420 ]
+549 silly gunzTarPerm extractEntry test/css/media.css
+550 silly gunzTarPerm modified mode [ 'test/css/media.css', 438, 420 ]
+551 silly gunzTarPerm extractEntry test/css/merge.css
+552 silly gunzTarPerm modified mode [ 'test/css/merge.css', 438, 420 ]
+553 silly gunzTarPerm extractEntry test/css/mixins-args.css
+554 silly gunzTarPerm modified mode [ 'test/css/mixins-args.css', 438, 420 ]
+555 silly gunzTarPerm extractEntry test/css/mixins-closure.css
+556 silly gunzTarPerm modified mode [ 'test/css/mixins-closure.css', 438, 420 ]
+557 silly gunzTarPerm extractEntry test/css/mixins-guards-default-func.css
+558 silly gunzTarPerm modified mode [ 'test/css/mixins-guards-default-func.css', 438, 420 ]
+559 silly gunzTarPerm extractEntry test/css/mixins-guards.css
+560 silly gunzTarPerm modified mode [ 'test/css/mixins-guards.css', 438, 420 ]
+561 silly gunzTarPerm extractEntry test/css/mixins-important.css
+562 silly gunzTarPerm modified mode [ 'test/css/mixins-important.css', 438, 420 ]
+563 silly gunzTarPerm extractEntry test/css/mixins-interpolated.css
+564 silly gunzTarPerm modified mode [ 'test/css/mixins-interpolated.css', 438, 420 ]
+565 silly gunzTarPerm extractEntry test/css/mixins-named-args.css
+566 silly gunzTarPerm modified mode [ 'test/css/mixins-named-args.css', 438, 420 ]
+567 silly gunzTarPerm extractEntry test/css/mixins-nested.css
+568 silly gunzTarPerm modified mode [ 'test/css/mixins-nested.css', 438, 420 ]
+569 silly gunzTarPerm extractEntry test/css/mixins-pattern.css
+570 silly gunzTarPerm modified mode [ 'test/css/mixins-pattern.css', 438, 420 ]
+571 silly gunzTarPerm extractEntry test/css/mixins.css
+572 silly gunzTarPerm modified mode [ 'test/css/mixins.css', 438, 420 ]
+573 silly gunzTarPerm extractEntry test/css/modifyVars/extended.css
+574 silly gunzTarPerm modified mode [ 'test/css/modifyVars/extended.css', 438, 420 ]
+575 silly gunzTarPerm extractEntry test/css/no-output.css
+576 silly gunzTarPerm modified mode [ 'test/css/no-output.css', 438, 420 ]
+577 silly gunzTarPerm extractEntry test/css/operations.css
+578 silly gunzTarPerm modified mode [ 'test/css/operations.css', 438, 420 ]
+579 silly gunzTarPerm extractEntry test/css/parens.css
+580 silly gunzTarPerm modified mode [ 'test/css/parens.css', 438, 420 ]
+581 silly gunzTarPerm extractEntry test/css/property-name-interp.css
+582 silly gunzTarPerm modified mode [ 'test/css/property-name-interp.css', 438, 420 ]
+583 silly gunzTarPerm extractEntry test/css/rulesets.css
+584 silly gunzTarPerm modified mode [ 'test/css/rulesets.css', 438, 420 ]
+585 silly gunzTarPerm extractEntry test/css/scope.css
+586 silly gunzTarPerm modified mode [ 'test/css/scope.css', 438, 420 ]
+587 silly gunzTarPerm extractEntry test/css/selectors.css
+588 silly gunzTarPerm modified mode [ 'test/css/selectors.css', 438, 420 ]
+589 silly gunzTarPerm extractEntry test/css/static-urls/urls.css
+590 silly gunzTarPerm modified mode [ 'test/css/static-urls/urls.css', 438, 420 ]
+591 silly gunzTarPerm extractEntry test/css/strings.css
+592 silly gunzTarPerm modified mode [ 'test/css/strings.css', 438, 420 ]
+593 silly gunzTarPerm extractEntry test/css/url-args/urls.css
+594 silly gunzTarPerm modified mode [ 'test/css/url-args/urls.css', 438, 420 ]
+595 silly gunzTarPerm extractEntry test/css/urls.css
+596 silly gunzTarPerm modified mode [ 'test/css/urls.css', 438, 420 ]
+597 silly gunzTarPerm extractEntry test/css/variables-in-at-rules.css
+598 silly gunzTarPerm modified mode [ 'test/css/variables-in-at-rules.css', 438, 420 ]
+599 silly gunzTarPerm extractEntry test/css/variables.css
+600 silly gunzTarPerm modified mode [ 'test/css/variables.css', 438, 420 ]
+601 silly gunzTarPerm extractEntry test/css/whitespace.css
+602 silly gunzTarPerm modified mode [ 'test/css/whitespace.css', 438, 420 ]
+603 silly gunzTarPerm extractEntry test/data/data-uri-fail.png
+604 silly gunzTarPerm modified mode [ 'test/data/data-uri-fail.png', 438, 420 ]
+605 silly gunzTarPerm extractEntry test/data/image.jpg
+606 silly gunzTarPerm modified mode [ 'test/data/image.jpg', 438, 420 ]
+607 silly gunzTarPerm extractEntry test/data/page.html
+608 silly gunzTarPerm modified mode [ 'test/data/page.html', 438, 420 ]
+609 silly gunzTarPerm extractEntry test/less/lazy-eval.less
+610 silly gunzTarPerm modified mode [ 'test/less/lazy-eval.less', 438, 420 ]
+611 silly gunzTarPerm extractEntry test/less/charsets.less
+612 silly gunzTarPerm modified mode [ 'test/less/charsets.less', 438, 420 ]
+613 silly gunzTarPerm extractEntry test/less/comments.less
+614 silly gunzTarPerm modified mode [ 'test/less/comments.less', 438, 420 ]
+615 silly gunzTarPerm extractEntry test/less/compression/compression.less
+616 silly gunzTarPerm modified mode [ 'test/less/compression/compression.less', 438, 420 ]
+617 silly gunzTarPerm extractEntry test/less/css-3.less
+618 silly gunzTarPerm modified mode [ 'test/less/css-3.less', 438, 420 ]
+619 silly gunzTarPerm extractEntry test/less/css-escapes.less
+620 silly gunzTarPerm modified mode [ 'test/less/css-escapes.less', 438, 420 ]
+621 silly gunzTarPerm extractEntry test/less/css-guards.less
+622 silly gunzTarPerm modified mode [ 'test/less/css-guards.less', 438, 420 ]
+623 silly gunzTarPerm extractEntry test/less/css.less
+624 silly gunzTarPerm modified mode [ 'test/less/css.less', 438, 420 ]
+625 silly gunzTarPerm extractEntry test/less/debug/import/test.less
+626 silly gunzTarPerm modified mode [ 'test/less/debug/import/test.less', 438, 420 ]
+627 silly gunzTarPerm extractEntry test/less/debug/linenumbers.less
+628 silly gunzTarPerm modified mode [ 'test/less/debug/linenumbers.less', 438, 420 ]
+629 silly gunzTarPerm extractEntry test/less/detached-rulesets.less
+630 silly gunzTarPerm modified mode [ 'test/less/detached-rulesets.less', 438, 420 ]
+631 silly gunzTarPerm extractEntry test/less/empty.less
+632 silly gunzTarPerm modified mode [ 'test/less/empty.less', 438, 420 ]
+633 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched.txt
+634 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-matched.txt', 438, 420 ]
+635 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units.less
+636 silly gunzTarPerm modified mode [ 'test/less/errors/add-mixed-units.less', 438, 420 ]
+637 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units2.less
+638 silly gunzTarPerm modified mode [ 'test/less/errors/add-mixed-units2.less', 438, 420 ]
+639 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units2.txt
+640 silly gunzTarPerm modified mode [ 'test/less/errors/add-mixed-units2.txt', 438, 420 ]
+641 silly gunzTarPerm extractEntry test/less/errors/at-rules-undefined-var.less
+642 silly gunzTarPerm modified mode [ 'test/less/errors/at-rules-undefined-var.less', 438, 420 ]
+643 silly gunzTarPerm extractEntry test/less/errors/at-rules-undefined-var.txt
+644 silly gunzTarPerm modified mode [ 'test/less/errors/at-rules-undefined-var.txt', 438, 420 ]
+645 silly gunzTarPerm extractEntry test/less/errors/bad-variable-declaration1.less
+646 silly gunzTarPerm modified mode [ 'test/less/errors/bad-variable-declaration1.less', 438, 420 ]
+647 silly gunzTarPerm extractEntry test/less/errors/bad-variable-declaration1.txt
+648 silly gunzTarPerm modified mode [ 'test/less/errors/bad-variable-declaration1.txt', 438, 420 ]
+649 silly gunzTarPerm extractEntry test/less/errors/color-func-invalid-color.less
+650 silly gunzTarPerm modified mode [ 'test/less/errors/color-func-invalid-color.less', 438, 420 ]
+651 silly gunzTarPerm extractEntry test/less/errors/color-func-invalid-color.txt
+652 silly gunzTarPerm modified mode [ 'test/less/errors/color-func-invalid-color.txt', 438, 420 ]
+653 silly gunzTarPerm extractEntry test/less/errors/color-invalid-hex-code.less
+654 silly gunzTarPerm modified mode [ 'test/less/errors/color-invalid-hex-code.less', 438, 420 ]
+655 silly gunzTarPerm extractEntry test/less/errors/color-invalid-hex-code.txt
+656 silly gunzTarPerm modified mode [ 'test/less/errors/color-invalid-hex-code.txt', 438, 420 ]
+657 silly gunzTarPerm extractEntry test/less/errors/color-invalid-hex-code2.less
+658 silly gunzTarPerm modified mode [ 'test/less/errors/color-invalid-hex-code2.less', 438, 420 ]
+659 silly gunzTarPerm extractEntry test/less/errors/color-invalid-hex-code2.txt
+660 silly gunzTarPerm modified mode [ 'test/less/errors/color-invalid-hex-code2.txt', 438, 420 ]
+661 silly gunzTarPerm extractEntry test/less/errors/comment-in-selector.less
+662 silly gunzTarPerm modified mode [ 'test/less/errors/comment-in-selector.less', 438, 420 ]
+663 silly gunzTarPerm extractEntry test/less/errors/comment-in-selector.txt
+664 silly gunzTarPerm modified mode [ 'test/less/errors/comment-in-selector.txt', 438, 420 ]
+665 silly gunzTarPerm extractEntry test/less/errors/css-guard-default-func.less
+666 silly gunzTarPerm modified mode [ 'test/less/errors/css-guard-default-func.less', 438, 420 ]
+667 silly gunzTarPerm extractEntry test/less/errors/css-guard-default-func.txt
+668 silly gunzTarPerm modified mode [ 'test/less/errors/css-guard-default-func.txt', 438, 420 ]
+669 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-1.less
+670 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-1.less', 438, 420 ]
+671 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-1.txt
+672 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-1.txt', 438, 420 ]
+673 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-2.less
+674 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-2.less', 438, 420 ]
+675 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-2.txt
+676 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-2.txt', 438, 420 ]
+677 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-3.less
+678 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-3.less', 438, 420 ]
+679 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-3.txt
+680 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-3.txt', 438, 420 ]
+681 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-4.less
+682 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-4.less', 438, 420 ]
+683 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-4.txt
+684 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-4.txt', 438, 420 ]
+685 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-5.less
+686 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-5.less', 438, 420 ]
+687 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-5.txt
+688 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-5.txt', 438, 420 ]
+689 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-6.less
+690 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-6.less', 438, 420 ]
+691 silly gunzTarPerm extractEntry test/less/errors/detached-ruleset-6.txt
+692 silly gunzTarPerm modified mode [ 'test/less/errors/detached-ruleset-6.txt', 438, 420 ]
+693 silly gunzTarPerm extractEntry test/less/errors/divide-mixed-units.less
+694 silly gunzTarPerm modified mode [ 'test/less/errors/divide-mixed-units.less', 438, 420 ]
+695 silly gunzTarPerm extractEntry test/less/errors/divide-mixed-units.txt
+696 silly gunzTarPerm modified mode [ 'test/less/errors/divide-mixed-units.txt', 438, 420 ]
+697 silly gunzTarPerm extractEntry test/less/errors/extend-no-selector.less
+698 silly gunzTarPerm modified mode [ 'test/less/errors/extend-no-selector.less', 438, 420 ]
+699 silly gunzTarPerm extractEntry test/less/errors/extend-no-selector.txt
+700 silly gunzTarPerm modified mode [ 'test/less/errors/extend-no-selector.txt', 438, 420 ]
+701 silly gunzTarPerm extractEntry test/less/errors/extend-not-at-end.less
+702 silly gunzTarPerm modified mode [ 'test/less/errors/extend-not-at-end.less', 438, 420 ]
+703 silly gunzTarPerm extractEntry test/less/errors/extend-not-at-end.txt
+704 silly gunzTarPerm modified mode [ 'test/less/errors/extend-not-at-end.txt', 438, 420 ]
+705 silly gunzTarPerm extractEntry test/less/errors/import-missing.less
+706 silly gunzTarPerm modified mode [ 'test/less/errors/import-missing.less', 438, 420 ]
+707 silly gunzTarPerm extractEntry test/less/errors/import-missing.txt
+708 silly gunzTarPerm modified mode [ 'test/less/errors/import-missing.txt', 438, 420 ]
+709 silly gunzTarPerm extractEntry test/less/errors/import-no-semi.less
+710 silly gunzTarPerm modified mode [ 'test/less/errors/import-no-semi.less', 438, 420 ]
+711 silly gunzTarPerm extractEntry test/less/errors/import-no-semi.txt
+712 silly gunzTarPerm modified mode [ 'test/less/errors/import-no-semi.txt', 438, 420 ]
+713 silly gunzTarPerm extractEntry test/less/errors/import-subfolder1.less
+714 silly gunzTarPerm modified mode [ 'test/less/errors/import-subfolder1.less', 438, 420 ]
+715 silly gunzTarPerm extractEntry test/less/errors/import-subfolder1.txt
+716 silly gunzTarPerm modified mode [ 'test/less/errors/import-subfolder1.txt', 438, 420 ]
+717 silly gunzTarPerm extractEntry test/less/errors/import-subfolder2.less
+718 silly gunzTarPerm modified mode [ 'test/less/errors/import-subfolder2.less', 438, 420 ]
+719 silly gunzTarPerm extractEntry test/less/errors/import-subfolder2.txt
+720 silly gunzTarPerm modified mode [ 'test/less/errors/import-subfolder2.txt', 438, 420 ]
+721 silly gunzTarPerm extractEntry test/less/errors/imports/import-subfolder1.less
+722 silly gunzTarPerm modified mode [ 'test/less/errors/imports/import-subfolder1.less', 438, 420 ]
+723 silly gunzTarPerm extractEntry test/less/errors/imports/import-subfolder2.less
+724 silly gunzTarPerm modified mode [ 'test/less/errors/imports/import-subfolder2.less', 438, 420 ]
+725 silly gunzTarPerm extractEntry test/less/errors/imports/import-test.less
+726 silly gunzTarPerm modified mode [ 'test/less/errors/imports/import-test.less', 438, 420 ]
+727 silly gunzTarPerm extractEntry test/less/errors/imports/subfolder/mixin-not-defined.less
+728 silly gunzTarPerm modified mode [ 'test/less/errors/imports/subfolder/mixin-not-defined.less',
+728 silly gunzTarPerm   438,
+728 silly gunzTarPerm   420 ]
+729 silly gunzTarPerm extractEntry test/less/errors/imports/subfolder/parse-error-curly-bracket.less
+730 silly gunzTarPerm modified mode [ 'test/less/errors/imports/subfolder/parse-error-curly-bracket.less',
+730 silly gunzTarPerm   438,
+730 silly gunzTarPerm   420 ]
+731 silly gunzTarPerm extractEntry test/less/errors/javascript-error.less
+732 silly gunzTarPerm modified mode [ 'test/less/errors/javascript-error.less', 438, 420 ]
+733 silly gunzTarPerm extractEntry test/less/errors/javascript-error.txt
+734 silly gunzTarPerm modified mode [ 'test/less/errors/javascript-error.txt', 438, 420 ]
+735 silly gunzTarPerm extractEntry test/less/errors/javascript-undefined-var.less
+736 silly gunzTarPerm modified mode [ 'test/less/errors/javascript-undefined-var.less', 438, 420 ]
+737 silly gunzTarPerm extractEntry test/less/errors/javascript-undefined-var.txt
+738 silly gunzTarPerm modified mode [ 'test/less/errors/javascript-undefined-var.txt', 438, 420 ]
+739 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-1.less
+740 silly gunzTarPerm modified mode [ 'test/less/errors/mixed-mixin-definition-args-1.less',
+740 silly gunzTarPerm   438,
+740 silly gunzTarPerm   420 ]
+741 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-1.txt
+742 silly gunzTarPerm modified mode [ 'test/less/errors/mixed-mixin-definition-args-1.txt',
+742 silly gunzTarPerm   438,
+742 silly gunzTarPerm   420 ]
+743 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-2.less
+744 silly gunzTarPerm modified mode [ 'test/less/errors/mixed-mixin-definition-args-2.less',
+744 silly gunzTarPerm   438,
+744 silly gunzTarPerm   420 ]
+745 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-2.txt
+746 silly gunzTarPerm modified mode [ 'test/less/errors/mixed-mixin-definition-args-2.txt',
+746 silly gunzTarPerm   438,
+746 silly gunzTarPerm   420 ]
+747 silly gunzTarPerm extractEntry test/less/errors/mixin-not-defined.less
+748 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-defined.less', 438, 420 ]
+749 silly gunzTarPerm extractEntry test/less/errors/mixin-not-defined.txt
+750 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-defined.txt', 438, 420 ]
+751 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched.less
+752 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-matched.less', 438, 420 ]
+753 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units.txt
+754 silly gunzTarPerm modified mode [ 'test/less/errors/add-mixed-units.txt', 438, 420 ]
+755 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched2.less
+756 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-matched2.less', 438, 420 ]
+757 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched2.txt
+758 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-matched2.txt', 438, 420 ]
+759 silly gunzTarPerm extractEntry test/less/errors/mixin-not-visible-in-scope-1.less
+760 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-visible-in-scope-1.less',
+760 silly gunzTarPerm   438,
+760 silly gunzTarPerm   420 ]
+761 silly gunzTarPerm extractEntry test/less/errors/mixin-not-visible-in-scope-1.txt
+762 silly gunzTarPerm modified mode [ 'test/less/errors/mixin-not-visible-in-scope-1.txt', 438, 420 ]
+763 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-1.less
+764 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-1.less',
+764 silly gunzTarPerm   438,
+764 silly gunzTarPerm   420 ]
+765 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-1.txt
+766 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-1.txt', 438, 420 ]
+767 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-2.less
+768 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-2.less',
+768 silly gunzTarPerm   438,
+768 silly gunzTarPerm   420 ]
+769 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-2.txt
+770 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-2.txt', 438, 420 ]
+771 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-3.less
+772 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-3.less',
+772 silly gunzTarPerm   438,
+772 silly gunzTarPerm   420 ]
+773 silly gunzTarPerm extractEntry test/less/errors/mixins-guards-default-func-3.txt
+774 silly gunzTarPerm modified mode [ 'test/less/errors/mixins-guards-default-func-3.txt', 438, 420 ]
+775 silly gunzTarPerm extractEntry test/less/errors/multiple-guards-on-css-selectors.less
+776 silly gunzTarPerm modified mode [ 'test/less/errors/multiple-guards-on-css-selectors.less',
+776 silly gunzTarPerm   438,
+776 silly gunzTarPerm   420 ]
+777 silly gunzTarPerm extractEntry test/less/errors/multiple-guards-on-css-selectors.txt
+778 silly gunzTarPerm modified mode [ 'test/less/errors/multiple-guards-on-css-selectors.txt',
+778 silly gunzTarPerm   438,
+778 silly gunzTarPerm   420 ]
+779 silly gunzTarPerm extractEntry test/less/errors/multiple-guards-on-css-selectors2.less
+780 silly gunzTarPerm modified mode [ 'test/less/errors/multiple-guards-on-css-selectors2.less',
+780 silly gunzTarPerm   438,
+780 silly gunzTarPerm   420 ]
+781 silly gunzTarPerm extractEntry test/less/errors/multiple-guards-on-css-selectors2.txt
+782 silly gunzTarPerm modified mode [ 'test/less/errors/multiple-guards-on-css-selectors2.txt',
+782 silly gunzTarPerm   438,
+782 silly gunzTarPerm   420 ]
+783 silly gunzTarPerm extractEntry test/less/errors/multiply-mixed-units.less
+784 silly gunzTarPerm modified mode [ 'test/less/errors/multiply-mixed-units.less', 438, 420 ]
+785 silly gunzTarPerm extractEntry test/less/errors/multiply-mixed-units.txt
+786 silly gunzTarPerm modified mode [ 'test/less/errors/multiply-mixed-units.txt', 438, 420 ]
+787 silly gunzTarPerm extractEntry test/less/errors/parens-error-1.less
+788 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-1.less', 438, 420 ]
+789 silly gunzTarPerm extractEntry test/less/errors/parens-error-1.txt
+790 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-1.txt', 438, 420 ]
+791 silly gunzTarPerm extractEntry test/less/errors/parens-error-2.less
+792 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-2.less', 438, 420 ]
+793 silly gunzTarPerm extractEntry test/less/errors/parens-error-2.txt
+794 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-2.txt', 438, 420 ]
+795 silly gunzTarPerm extractEntry test/less/errors/parens-error-3.less
+796 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-3.less', 438, 420 ]
+797 silly gunzTarPerm extractEntry test/less/errors/parens-error-3.txt
+798 silly gunzTarPerm modified mode [ 'test/less/errors/parens-error-3.txt', 438, 420 ]
+799 silly gunzTarPerm extractEntry test/less/errors/parse-error-curly-bracket.less
+800 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-curly-bracket.less', 438, 420 ]
+801 silly gunzTarPerm extractEntry test/less/errors/parse-error-curly-bracket.txt
+802 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-curly-bracket.txt', 438, 420 ]
+803 silly gunzTarPerm extractEntry test/less/errors/parse-error-extra-parens.less
+804 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-extra-parens.less', 438, 420 ]
+805 silly gunzTarPerm extractEntry test/less/errors/parse-error-extra-parens.txt
+806 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-extra-parens.txt', 438, 420 ]
+807 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-bracket.less
+808 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-missing-bracket.less', 438, 420 ]
+809 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-bracket.txt
+810 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-missing-bracket.txt', 438, 420 ]
+811 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-parens.less
+812 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-missing-parens.less', 438, 420 ]
+813 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-parens.txt
+814 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-missing-parens.txt', 438, 420 ]
+815 silly gunzTarPerm extractEntry test/less/errors/parse-error-with-import.less
+816 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-with-import.less', 438, 420 ]
+817 silly gunzTarPerm extractEntry test/less/errors/parse-error-with-import.txt
+818 silly gunzTarPerm modified mode [ 'test/less/errors/parse-error-with-import.txt', 438, 420 ]
+819 silly gunzTarPerm extractEntry test/less/errors/percentage-missing-space.less
+820 silly gunzTarPerm modified mode [ 'test/less/errors/percentage-missing-space.less', 438, 420 ]
+821 silly gunzTarPerm extractEntry test/less/errors/percentage-missing-space.txt
+822 silly gunzTarPerm modified mode [ 'test/less/errors/percentage-missing-space.txt', 438, 420 ]
+823 silly gunzTarPerm extractEntry test/less/errors/property-asterisk-only-name.less
+824 silly gunzTarPerm modified mode [ 'test/less/errors/property-asterisk-only-name.less', 438, 420 ]
+825 silly gunzTarPerm extractEntry test/less/errors/property-asterisk-only-name.txt
+826 silly gunzTarPerm modified mode [ 'test/less/errors/property-asterisk-only-name.txt', 438, 420 ]
+827 silly gunzTarPerm extractEntry test/less/errors/property-ie5-hack.less
+828 silly gunzTarPerm modified mode [ 'test/less/errors/property-ie5-hack.less', 438, 420 ]
+829 silly gunzTarPerm extractEntry test/less/errors/property-ie5-hack.txt
+830 silly gunzTarPerm modified mode [ 'test/less/errors/property-ie5-hack.txt', 438, 420 ]
+831 silly gunzTarPerm extractEntry test/less/errors/property-in-root.less
+832 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root.less', 438, 420 ]
+833 silly gunzTarPerm extractEntry test/less/errors/property-in-root.txt
+834 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root.txt', 438, 420 ]
+835 silly gunzTarPerm extractEntry test/less/errors/property-in-root2.less
+836 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root2.less', 438, 420 ]
+837 silly gunzTarPerm extractEntry test/less/errors/property-in-root2.txt
+838 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root2.txt', 438, 420 ]
+839 silly gunzTarPerm extractEntry test/less/errors/property-in-root3.less
+840 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root3.less', 438, 420 ]
+841 silly gunzTarPerm extractEntry test/less/errors/property-in-root3.txt
+842 silly gunzTarPerm modified mode [ 'test/less/errors/property-in-root3.txt', 438, 420 ]
+843 silly gunzTarPerm extractEntry test/less/errors/property-interp-not-defined.less
+844 silly gunzTarPerm modified mode [ 'test/less/errors/property-interp-not-defined.less', 438, 420 ]
+845 silly gunzTarPerm extractEntry test/less/errors/property-interp-not-defined.txt
+846 silly gunzTarPerm modified mode [ 'test/less/errors/property-interp-not-defined.txt', 438, 420 ]
+847 silly gunzTarPerm extractEntry test/less/errors/recursive-variable.less
+848 silly gunzTarPerm modified mode [ 'test/less/errors/recursive-variable.less', 438, 420 ]
+849 silly gunzTarPerm extractEntry test/less/errors/recursive-variable.txt
+850 silly gunzTarPerm modified mode [ 'test/less/errors/recursive-variable.txt', 438, 420 ]
+851 silly gunzTarPerm extractEntry test/less/errors/svg-gradient1.less
+852 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient1.less', 438, 420 ]
+853 silly gunzTarPerm extractEntry test/less/errors/svg-gradient1.txt
+854 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient1.txt', 438, 420 ]
+855 silly gunzTarPerm extractEntry test/less/errors/svg-gradient2.less
+856 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient2.less', 438, 420 ]
+857 silly gunzTarPerm extractEntry test/less/errors/svg-gradient2.txt
+858 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient2.txt', 438, 420 ]
+859 silly gunzTarPerm extractEntry test/less/errors/svg-gradient3.less
+860 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient3.less', 438, 420 ]
+861 silly gunzTarPerm extractEntry test/less/errors/svg-gradient3.txt
+862 silly gunzTarPerm modified mode [ 'test/less/errors/svg-gradient3.txt', 438, 420 ]
+863 silly gunzTarPerm extractEntry test/less/errors/unit-function.less
+864 silly gunzTarPerm modified mode [ 'test/less/errors/unit-function.less', 438, 420 ]
+865 silly gunzTarPerm extractEntry test/less/errors/unit-function.txt
+866 silly gunzTarPerm modified mode [ 'test/less/errors/unit-function.txt', 438, 420 ]
+867 silly gunzTarPerm extractEntry test/less/extend-chaining.less
+868 silly gunzTarPerm modified mode [ 'test/less/extend-chaining.less', 438, 420 ]
+869 silly gunzTarPerm extractEntry test/less/extend-clearfix.less
+870 silly gunzTarPerm modified mode [ 'test/less/extend-clearfix.less', 438, 420 ]
+871 silly gunzTarPerm extractEntry test/less/extend-exact.less
+872 silly gunzTarPerm modified mode [ 'test/less/extend-exact.less', 438, 420 ]
+873 silly gunzTarPerm extractEntry test/less/extend-media.less
+874 silly gunzTarPerm modified mode [ 'test/less/extend-media.less', 438, 420 ]
+875 silly gunzTarPerm extractEntry test/less/extend-nest.less
+876 silly gunzTarPerm modified mode [ 'test/less/extend-nest.less', 438, 420 ]
+877 silly gunzTarPerm extractEntry test/less/extend-selector.less
+878 silly gunzTarPerm modified mode [ 'test/less/extend-selector.less', 438, 420 ]
+879 silly gunzTarPerm extractEntry test/less/extend.less
+880 silly gunzTarPerm modified mode [ 'test/less/extend.less', 438, 420 ]
+881 silly gunzTarPerm extractEntry test/less/extract-and-length.less
+882 silly gunzTarPerm modified mode [ 'test/less/extract-and-length.less', 438, 420 ]
+883 silly gunzTarPerm extractEntry test/less/functions.less
+884 silly gunzTarPerm modified mode [ 'test/less/functions.less', 438, 420 ]
+885 silly gunzTarPerm extractEntry test/less/globalVars/extended.json
+886 silly gunzTarPerm modified mode [ 'test/less/globalVars/extended.json', 438, 420 ]
+887 silly gunzTarPerm extractEntry test/less/globalVars/extended.less
+888 silly gunzTarPerm modified mode [ 'test/less/globalVars/extended.less', 438, 420 ]
+889 silly gunzTarPerm extractEntry test/less/globalVars/simple.json
+890 silly gunzTarPerm modified mode [ 'test/less/globalVars/simple.json', 438, 420 ]
+891 silly gunzTarPerm extractEntry test/less/globalVars/simple.less
+892 silly gunzTarPerm modified mode [ 'test/less/globalVars/simple.less', 438, 420 ]
+893 silly gunzTarPerm extractEntry test/less/ie-filters.less
+894 silly gunzTarPerm modified mode [ 'test/less/ie-filters.less', 438, 420 ]
+895 silly gunzTarPerm extractEntry test/less/import/import-test-b.less
+896 silly gunzTarPerm modified mode [ 'test/less/import/import-test-b.less', 438, 420 ]
+897 silly gunzTarPerm extractEntry test/less/import/deeper/import-once-test-a.less
+898 silly gunzTarPerm modified mode [ 'test/less/import/deeper/import-once-test-a.less', 438, 420 ]
+899 silly gunzTarPerm extractEntry test/less/import/import-charset-test.less
+900 silly gunzTarPerm modified mode [ 'test/less/import/import-charset-test.less', 438, 420 ]
+901 silly gunzTarPerm extractEntry test/less/import/import-interpolation.less
+902 silly gunzTarPerm modified mode [ 'test/less/import/import-interpolation.less', 438, 420 ]
+903 silly gunzTarPerm extractEntry test/less/import/import-interpolation2.less
+904 silly gunzTarPerm modified mode [ 'test/less/import/import-interpolation2.less', 438, 420 ]
+905 silly gunzTarPerm extractEntry test/less/import/import-once-test-c.less
+906 silly gunzTarPerm modified mode [ 'test/less/import/import-once-test-c.less', 438, 420 ]
+907 silly gunzTarPerm extractEntry test/less/import/import-reference.less
+908 silly gunzTarPerm modified mode [ 'test/less/import/import-reference.less', 438, 420 ]
+909 silly gunzTarPerm extractEntry test/less/import/import-test-a.less
+910 silly gunzTarPerm modified mode [ 'test/less/import/import-test-a.less', 438, 420 ]
+911 silly gunzTarPerm extractEntry test/less/import/import-and-relative-paths-test.less
+912 silly gunzTarPerm modified mode [ 'test/less/import/import-and-relative-paths-test.less',
+912 silly gunzTarPerm   438,
+912 silly gunzTarPerm   420 ]
+913 silly gunzTarPerm extractEntry test/less/import/import-test-c.less
+914 silly gunzTarPerm modified mode [ 'test/less/import/import-test-c.less', 438, 420 ]
+915 silly gunzTarPerm extractEntry test/less/import/import-test-d.css
+916 silly gunzTarPerm modified mode [ 'test/less/import/import-test-d.css', 438, 420 ]
+917 silly gunzTarPerm extractEntry test/less/import/import-test-e.less
+918 silly gunzTarPerm modified mode [ 'test/less/import/import-test-e.less', 438, 420 ]
+919 silly gunzTarPerm extractEntry test/less/import/import-test-f.less
+920 silly gunzTarPerm modified mode [ 'test/less/import/import-test-f.less', 438, 420 ]
+921 silly gunzTarPerm extractEntry test/less/import/imports/font.less
+922 silly gunzTarPerm modified mode [ 'test/less/import/imports/font.less', 438, 420 ]
+923 silly gunzTarPerm extractEntry test/less/import/imports/logo.less
+924 silly gunzTarPerm modified mode [ 'test/less/import/imports/logo.less', 438, 420 ]
+925 silly gunzTarPerm extractEntry test/less/import/invalid-css.less
+926 silly gunzTarPerm modified mode [ 'test/less/import/invalid-css.less', 438, 420 ]
+927 silly gunzTarPerm extractEntry test/less/import/urls.less
+928 silly gunzTarPerm modified mode [ 'test/less/import/urls.less', 438, 420 ]
+929 silly gunzTarPerm extractEntry test/less/import-inline.less
+930 silly gunzTarPerm modified mode [ 'test/less/import-inline.less', 438, 420 ]
+931 silly gunzTarPerm extractEntry test/less/import-interpolation.less
+932 silly gunzTarPerm modified mode [ 'test/less/import-interpolation.less', 438, 420 ]
+933 silly gunzTarPerm extractEntry test/less/import-once.less
+934 silly gunzTarPerm modified mode [ 'test/less/import-once.less', 438, 420 ]
+935 silly gunzTarPerm extractEntry test/less/import-reference.less
+936 silly gunzTarPerm modified mode [ 'test/less/import-reference.less', 438, 420 ]
+937 silly gunzTarPerm extractEntry test/less/import.less
+938 silly gunzTarPerm modified mode [ 'test/less/import.less', 438, 420 ]
+939 silly gunzTarPerm extractEntry test/less/javascript.less
+940 silly gunzTarPerm modified mode [ 'test/less/javascript.less', 438, 420 ]
+941 silly gunzTarPerm extractEntry test/less/colors.less
+942 silly gunzTarPerm modified mode [ 'test/less/colors.less', 438, 420 ]
+943 silly gunzTarPerm extractEntry test/less/legacy/legacy.less
+944 silly gunzTarPerm modified mode [ 'test/less/legacy/legacy.less', 438, 420 ]
+945 silly gunzTarPerm extractEntry test/less/media.less
+946 silly gunzTarPerm modified mode [ 'test/less/media.less', 438, 420 ]
+947 silly gunzTarPerm extractEntry test/less/merge.less
+948 silly gunzTarPerm modified mode [ 'test/less/merge.less', 438, 420 ]
+949 silly gunzTarPerm extractEntry test/less/mixins-args.less
+950 silly gunzTarPerm modified mode [ 'test/less/mixins-args.less', 438, 420 ]
+951 silly gunzTarPerm extractEntry test/less/mixins-closure.less
+952 silly gunzTarPerm modified mode [ 'test/less/mixins-closure.less', 438, 420 ]
+953 silly gunzTarPerm extractEntry test/less/mixins-guards-default-func.less
+954 silly gunzTarPerm modified mode [ 'test/less/mixins-guards-default-func.less', 438, 420 ]
+955 silly gunzTarPerm extractEntry test/less/mixins-guards.less
+956 silly gunzTarPerm modified mode [ 'test/less/mixins-guards.less', 438, 420 ]
+957 silly gunzTarPerm extractEntry test/less/mixins-important.less
+958 silly gunzTarPerm modified mode [ 'test/less/mixins-important.less', 438, 420 ]
+959 silly gunzTarPerm extractEntry test/less/mixins-interpolated.less
+960 silly gunzTarPerm modified mode [ 'test/less/mixins-interpolated.less', 438, 420 ]
+961 silly gunzTarPerm extractEntry test/less/mixins-named-args.less
+962 silly gunzTarPerm modified mode [ 'test/less/mixins-named-args.less', 438, 420 ]
+963 silly gunzTarPerm extractEntry test/less/mixins-nested.less
+964 silly gunzTarPerm modified mode [ 'test/less/mixins-nested.less', 438, 420 ]
+965 silly gunzTarPerm extractEntry test/less/mixins-pattern.less
+966 silly gunzTarPerm modified mode [ 'test/less/mixins-pattern.less', 438, 420 ]
+967 silly gunzTarPerm extractEntry test/less/mixins.less
+968 silly gunzTarPerm modified mode [ 'test/less/mixins.less', 438, 420 ]
+969 silly gunzTarPerm extractEntry test/less/modifyVars/extended.json
+970 silly gunzTarPerm modified mode [ 'test/less/modifyVars/extended.json', 438, 420 ]
+971 silly gunzTarPerm extractEntry test/less/modifyVars/extended.less
+972 silly gunzTarPerm modified mode [ 'test/less/modifyVars/extended.less', 438, 420 ]
+973 silly gunzTarPerm extractEntry test/less/no-js-errors/no-js-errors.less
+974 silly gunzTarPerm modified mode [ 'test/less/no-js-errors/no-js-errors.less', 438, 420 ]
+975 silly gunzTarPerm extractEntry test/less/no-js-errors/no-js-errors.txt
+976 silly gunzTarPerm modified mode [ 'test/less/no-js-errors/no-js-errors.txt', 438, 420 ]
+977 silly gunzTarPerm extractEntry test/less/no-output.less
+978 silly gunzTarPerm modified mode [ 'test/less/no-output.less', 438, 420 ]
+979 silly gunzTarPerm extractEntry test/less/operations.less
+980 silly gunzTarPerm modified mode [ 'test/less/operations.less', 438, 420 ]
+981 silly gunzTarPerm extractEntry test/less/parens.less
+982 silly gunzTarPerm modified mode [ 'test/less/parens.less', 438, 420 ]
+983 silly gunzTarPerm extractEntry test/less/property-name-interp.less
+984 silly gunzTarPerm modified mode [ 'test/less/property-name-interp.less', 438, 420 ]
+985 silly gunzTarPerm extractEntry test/less/rulesets.less
+986 silly gunzTarPerm modified mode [ 'test/less/rulesets.less', 438, 420 ]
+987 silly gunzTarPerm extractEntry test/less/scope.less
+988 silly gunzTarPerm modified mode [ 'test/less/scope.less', 438, 420 ]
+989 silly gunzTarPerm extractEntry test/less/selectors.less
+990 silly gunzTarPerm modified mode [ 'test/less/selectors.less', 438, 420 ]
+991 silly gunzTarPerm extractEntry test/less/sourcemaps/basic.json
+992 silly gunzTarPerm modified mode [ 'test/less/sourcemaps/basic.json', 438, 420 ]
+993 silly gunzTarPerm extractEntry test/less/sourcemaps/basic.less
+994 silly gunzTarPerm modified mode [ 'test/less/sourcemaps/basic.less', 438, 420 ]
+995 silly gunzTarPerm extractEntry test/less/sourcemaps/imported.css
+996 silly gunzTarPerm modified mode [ 'test/less/sourcemaps/imported.css', 438, 420 ]
+997 silly gunzTarPerm extractEntry test/less/static-urls/urls.less
+998 silly gunzTarPerm modified mode [ 'test/less/static-urls/urls.less', 438, 420 ]
+999 silly gunzTarPerm extractEntry test/less/strings.less
+1000 silly gunzTarPerm modified mode [ 'test/less/strings.less', 438, 420 ]
+1001 silly gunzTarPerm extractEntry test/less/url-args/urls.less
+1002 silly gunzTarPerm modified mode [ 'test/less/url-args/urls.less', 438, 420 ]
+1003 silly gunzTarPerm extractEntry test/less/urls.less
+1004 silly gunzTarPerm modified mode [ 'test/less/urls.less', 438, 420 ]
+1005 silly gunzTarPerm extractEntry test/less/variables-in-at-rules.less
+1006 silly gunzTarPerm modified mode [ 'test/less/variables-in-at-rules.less', 438, 420 ]
+1007 silly gunzTarPerm extractEntry test/less/variables.less
+1008 silly gunzTarPerm modified mode [ 'test/less/variables.less', 438, 420 ]
+1009 silly gunzTarPerm extractEntry test/less/whitespace.less
+1010 silly gunzTarPerm modified mode [ 'test/less/whitespace.less', 438, 420 ]
+1011 silly gunzTarPerm extractEntry test/rhino/test-header.js
+1012 silly gunzTarPerm modified mode [ 'test/rhino/test-header.js', 438, 420 ]
+1013 silly gunzTarPerm extractEntry test/sourcemaps/basic.json
+1014 silly gunzTarPerm modified mode [ 'test/sourcemaps/basic.json', 438, 420 ]
+1015 silly gunzTarPerm extractEntry test/sourcemaps/index.html
+1016 silly gunzTarPerm modified mode [ 'test/sourcemaps/index.html', 438, 420 ]
+1017 silly gunzTarPerm extractEntry tmp/browser/test-runner-browser.html
+1018 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-browser.html', 438, 420 ]
+1019 silly gunzTarPerm extractEntry tmp/browser/test-runner-errors.html
+1020 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-errors.html', 438, 420 ]
+1021 silly gunzTarPerm extractEntry tmp/browser/test-runner-legacy.html
+1022 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-legacy.html', 438, 420 ]
+1023 silly gunzTarPerm extractEntry tmp/browser/test-runner-main.html
+1024 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-main.html', 438, 420 ]
+1025 silly gunzTarPerm extractEntry tmp/browser/test-runner-no-js-errors.html
+1026 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-no-js-errors.html', 438, 420 ]
+1027 silly gunzTarPerm extractEntry tmp/browser/test-runner-relative-urls.html
+1028 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-relative-urls.html', 438, 420 ]
+1029 silly gunzTarPerm extractEntry tmp/browser/test-runner-rootpath.html
+1030 silly gunzTarPerm modified mode [ 'tmp/browser/test-runner-rootpath.html', 438, 420 ]
+1031 silly lockFile 8c5a255d-e-elibeth-npm-less-1-7-1-package tar:///home/elibeth/.npm/less/1.7.1/package
+1032 silly lockFile 8c5a255d-e-elibeth-npm-less-1-7-1-package tar:///home/elibeth/.npm/less/1.7.1/package
+1033 silly lockFile 5d6b6c45-48017-0-1256138936150819-tmp-tgz tar:///home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz
+1034 silly lockFile 5d6b6c45-48017-0-1256138936150819-tmp-tgz tar:///home/elibeth/tmp/npm-5497-zelNMMS7/1402964748017-0.1256138936150819/tmp.tgz
+1035 silly lockFile 7673fa21-ry-npmjs-org-less-less-1-7-1-tgz https://registry.npmjs.org/less/-/less-1.7.1.tgz
+1036 silly lockFile 7673fa21-ry-npmjs-org-less-less-1-7-1-tgz https://registry.npmjs.org/less/-/less-1.7.1.tgz
+1037 silly lockFile 98be6ecf-less-1-7-1 less@1.7.1
+1038 silly lockFile 98be6ecf-less-1-7-1 less@1.7.1
+1039 silly lockFile e13833ab-less less@
+1040 silly lockFile e13833ab-less less@
+1041 silly resolved [ { name: 'less',
+1041 silly resolved     version: '1.7.1',
+1041 silly resolved     description: 'Leaner CSS',
+1041 silly resolved     homepage: 'http://lesscss.org',
+1041 silly resolved     author: { name: 'Alexis Sellier', email: 'self@cloudhead.net' },
+1041 silly resolved     contributors: [ [Object] ],
+1041 silly resolved     bugs: { url: 'https://github.com/less/less.js/issues' },
+1041 silly resolved     repository: { type: 'git', url: 'https://github.com/less/less.js.git' },
+1041 silly resolved     licenses: [ [Object] ],
+1041 silly resolved     bin: { lessc: './bin/lessc' },
+1041 silly resolved     main: './lib/less/index',
+1041 silly resolved     directories: { test: './test' },
+1041 silly resolved     jam: { main: './dist/less-1.6.3.js' },
+1041 silly resolved     engines: { node: '>=0.8.0' },
+1041 silly resolved     scripts: { test: 'grunt test' },
+1041 silly resolved     optionalDependencies:
+1041 silly resolved      { 'graceful-fs': '~2.0.3',
+1041 silly resolved        mime: '~1.2.11',
+1041 silly resolved        request: '~2.34.0',
+1041 silly resolved        mkdirp: '~0.3.5',
+1041 silly resolved        'clean-css': '2.1.x',
+1041 silly resolved        'source-map': '0.1.x' },
+1041 silly resolved     devDependencies:
+1041 silly resolved      { diff: '~1.0',
+1041 silly resolved        grunt: '~0.4.2',
+1041 silly resolved        'grunt-contrib-clean': '~0.5.0',
+1041 silly resolved        'grunt-contrib-concat': '~0.4.0',
+1041 silly resolved        'grunt-contrib-connect': '~0.7.0',
+1041 silly resolved        'grunt-contrib-jasmine': '~0.5.2',
+1041 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+1041 silly resolved        'grunt-contrib-uglify': '~0.4.0',
+1041 silly resolved        'grunt-shell': '~0.7.0',
+1041 silly resolved        'http-server': '~0.6.1',
+1041 silly resolved        matchdep: '~0.3.0',
+1041 silly resolved        'time-grunt': '~0.3.1' },
+1041 silly resolved     keywords:
+1041 silly resolved      [ 'compile less',
+1041 silly resolved        'css nesting',
+1041 silly resolved        'css variable',
+1041 silly resolved        'css',
+1041 silly resolved        'gradients css',
+1041 silly resolved        'gradients css3',
+1041 silly resolved        'less compiler',
+1041 silly resolved        'less css',
+1041 silly resolved        'less mixins',
+1041 silly resolved        'less',
+1041 silly resolved        'less.js',
+1041 silly resolved        'lesscss',
+1041 silly resolved        'mixins',
+1041 silly resolved        'nested css',
+1041 silly resolved        'parser',
+1041 silly resolved        'preprocessor',
+1041 silly resolved        'bootstrap css',
+1041 silly resolved        'bootstrap less',
+1041 silly resolved        'style',
+1041 silly resolved        'styles',
+1041 silly resolved        'stylesheet',
+1041 silly resolved        'variables in css',
+1041 silly resolved        'css less' ],
+1041 silly resolved     readme: '[![Build Status](https://travis-ci.org/less/less.js.png?branch=master)](https://travis-ci.org/less/less.js)\r\n [![Dependencies](https://david-dm.org/less/less.js.png)](https://david-dm.org/less/less.js) [![devDependency Status](https://david-dm.org/less/less.js/dev-status.png)](https://david-dm.org/less/less.js#info=devDependencies) [![optionalDependency Status](https://david-dm.org/less/less.js/optional-status.png)](https://david-dm.org/less/less.js#info=optionalDependencies)\r\n\r\n# [Less.js v1.7.1](http://lesscss.org)\r\n\r\n> The **dynamic** stylesheet language. [http://lesscss.org](http://lesscss.org).\r\n\r\nThis is the JavaScript, official, stable version of Less.\r\n\r\n\r\n## Getting Started\r\n\r\nOptions for adding Less.js to your project:\r\n\r\n* Install with [NPM](https://npmjs.org/): `npm install less`\r\n* [Download the latest release][download]\r\n* Clone the repo: `git clone git://github.com/less/less.js.git`\r\n\r\n## More information\r\n\r\nFor general information on the language, configuration options or usage visit [lesscss.org](http://lesscss.org).\r\n\r\nHere are other resources for using Less.js:\r\n\r\n* [stackoverflow.com][so] is a great place to get answers about Less.\r\n* [Less.js Issues][issues] for reporting bugs\r\n\r\n\r\n## Contributing\r\nPlease read [CONTRIBUTING.md](./CONTRIBUTING.md). Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\r\n\r\n### Reporting Issues\r\n\r\nBefore opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/). After that if you find a bug or would like to make feature request, [please open a new issue][issues].\r\n\r\nPlease report documentation issues in [the documentation project](https://github.com/less/less-docs).\r\n\r\n### Development\r\n\r\nRead [Developing Less](http://lesscss.org/usage/#developing-less).\r\n\r\n## Release History\r\nSee the [changelog](CHANGELOG.md)\r\n\r\n## [License](LICENSE)\r\n\r\nCopyright (c) 2009-2014 [Alexis Sellier](http://cloudhead.io/) & The Core Less Team\r\nLicensed under the [Apache License](LICENSE).\r\n\r\n\r\n[so]: http://stackoverflow.com/questions/tagged/twitter-bootstrap+less "StackOverflow.com"\r\n[issues]: https://github.com/less/less.js/issues "GitHub Issues for Less.js"\r\n[download]: https://github.com/less/less.js/zipball/master "Download Less.js"\r\n',
+1041 silly resolved     readmeFilename: 'README.md',
+1041 silly resolved     dependencies:
+1041 silly resolved      { 'graceful-fs': '~2.0.3',
+1041 silly resolved        mime: '~1.2.11',
+1041 silly resolved        request: '~2.34.0',
+1041 silly resolved        mkdirp: '~0.3.5',
+1041 silly resolved        'clean-css': '2.1.x',
+1041 silly resolved        'source-map': '0.1.x' },
+1041 silly resolved     _id: 'less@1.7.1',
+1041 silly resolved     _shasum: '6f5580029b52c3ac590e85e2b079827a66f6cc74',
+1041 silly resolved     _from: 'less@',
+1041 silly resolved     _resolved: 'https://registry.npmjs.org/less/-/less-1.7.1.tgz' } ]
+1042 info install less@1.7.1 into /usr/lib
+1043 info installOne less@1.7.1
+1044 info /usr/lib/node_modules/less unbuild
+1045 verbose tar unpack /home/elibeth/.npm/less/1.7.1/package.tgz
+1046 silly lockFile c07f1dd4-tar-usr-lib-node-modules-less tar:///usr/lib/node_modules/less
+1047 verbose lock tar:///usr/lib/node_modules/less /home/elibeth/.npm/c07f1dd4-tar-usr-lib-node-modules-less.lock
+1048 silly lockFile 2e288ea2-ibeth-npm-less-1-7-1-package-tgz tar:///home/elibeth/.npm/less/1.7.1/package.tgz
+1049 verbose lock tar:///home/elibeth/.npm/less/1.7.1/package.tgz /home/elibeth/.npm/2e288ea2-ibeth-npm-less-1-7-1-package-tgz.lock
+1050 silly gunzTarPerm modes [ '755', '644' ]
+1051 error Error: EACCES, mkdir '/usr/lib/node_modules/less'
+1051 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/less']
+1051 error   errno: 3,
+1051 error   code: 'EACCES',
+1051 error   path: '/usr/lib/node_modules/less',
+1051 error   fstream_type: 'Directory',
+1051 error   fstream_path: '/usr/lib/node_modules/less',
+1051 error   fstream_class: 'DirWriter',
+1051 error   fstream_stack:
+1051 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+1051 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+1051 error      'Object.oncomplete (fs.js:107:15)' ] }
+1052 error Please try running this command again as root/Administrator.
+1053 error System Linux 3.13.0-24-generic
+1054 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "less"
+1055 error cwd /home/elibeth/Rails/LibreriaVirtualRoka
+1056 error node -v v0.10.28
+1057 error npm -v 1.4.9
+1058 error path /usr/lib/node_modules/less
+1059 error fstream_path /usr/lib/node_modules/less
+1060 error fstream_type Directory
+1061 error fstream_class DirWriter
+1062 error code EACCES
+1063 error errno 3
+1064 error stack Error: EACCES, mkdir '/usr/lib/node_modules/less'
+1065 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+1065 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+1065 error fstream_stack Object.oncomplete (fs.js:107:15)
+1066 verbose exit [ 3, true ]

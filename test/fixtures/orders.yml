@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: 1
+  client_id: 1
+  fechaPedido: 2014-06-16 17:59:33
+  fechaParaEntregar: 2014-06-16 17:59:33
+  fechaEntrega: 2014-06-16 17:59:33
+  direccion: MyString
+  cancelado: false
+  enEspera: false
+  entregado: false
+
+two:
+  employee_id: 1
+  client_id: 1
+  fechaPedido: 2014-06-16 17:59:33
+  fechaParaEntregar: 2014-06-16 17:59:33
+  fechaEntrega: 2014-06-16 17:59:33
+  direccion: MyString
+  cancelado: false
+  enEspera: false
+  entregado: false
