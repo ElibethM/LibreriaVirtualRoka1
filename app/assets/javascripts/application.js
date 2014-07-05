@@ -12,12 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.autocomplete
+//= require autocomplete-rails 
+//= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
+//= require_tree.
+
 $(document).ready(function(){
 
 
   $('#clavelibro').on("change",function() {
+    //pasar a cantidad
+    $("#descuentolibro").focus();
+  });
+  $('#descuentolibro').on("change",function() {
     //pasar a cantidad
     $("#cantidadlibro").focus();
   });
@@ -34,19 +42,28 @@ $(document).ready(function(){
     //enviar formulario
     $("#new_sale").submit();
   });
- $('#Nombrecliente').on("keypress",function(event) {
-    //buscar el cliente por nombre y agregarlo
-    if ( event.which == 13)
-    {
-      //agregaLibro($('#clavelibro').val()); 
-    //  alert("Hemos presionado para realizar busqueda de un cliente: " + $("#clavecliente").val().toLowerCase());
-      var Nombrecliente = $("#Nombrecliente").val().toLowerCase();
-      buscarCliente($("#Nombrecliente").val().toLowerCase());
-    }
+// $('#client_nombre').bind('railsAutocomplete.select', function(event, data){
+  //   /* Do something here */
+  //   alert(data);
+  // });
+
+$('#client_nombre').on('railsAutocomplete.select', function(event, data){
+  //poner valores en input requeridos con datos del cliente
+    $("#client_id").val(data.item.id);
+    $("#sale_client_id").val(data.item.id);
   });
 
+  //prevenir que puedan quedarse datos del cliente
+  $('#client_nombre').on("keypress",function(event) {
+    if($(this).val() == "")
+     {
+      $("#client_id").val("");
+      $("#sale_client_id").val("");
+     }
+  });
+ 
 
-});
+  });
 
 function agregaLibro(Isbn){
   var index = $(".idLibroVender").length;
@@ -88,11 +105,15 @@ function agregaLibro(Isbn){
     });
   }
 
+
+
+  }
+
   function resetAgregaLibro(){
     $("#cantidadlibro").val("");
     $('#clavelibro').val("");
     $('#clavelibro').focus();
-    $('#descuentolibro').val(0);
+    $('#descuentolibro').val("");
   }
 
   function calculaTotales(){

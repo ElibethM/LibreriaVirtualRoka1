@@ -4,7 +4,14 @@ class PromotionsController < ApplicationController
   # GET /promotions
   # GET /promotions.json
   def index
-    @promotions = Promotion.all
+    if params[:fecha]
+        @promotions = Promotion.where("fecha LIKE '%"+params[:fecha]+"%'")
+        if @promotions.size.zero?
+        @promotions = Promotion.all 
+        end
+      else
+       @promotions = Promotion.all    
+    end
   end
 
   # GET /promotions/1

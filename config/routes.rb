@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   resources :clients do
     collection do
-    post :findRfc
-     get :findRfc
+      get :autocomplete_client_nombre
     end
   end
-
 
   resources :books do 
    collection do
@@ -32,7 +30,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'sales#index'
+  root 'clients#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

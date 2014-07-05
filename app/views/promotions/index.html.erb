@@ -15,7 +15,7 @@
   <tbody>
     <% @promotions.each do |promotion| %>
       <tr>
-        <td><%= promotion.client_id %></td>
+        <td><%= promotion.client.nombre %></td>
         <td><%= promotion.employee_id %></td>
         <td><%= promotion.fecha %></td>
         <td><%= promotion.medioComunicacion %></td>

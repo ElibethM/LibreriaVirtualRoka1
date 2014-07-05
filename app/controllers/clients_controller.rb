@@ -1,10 +1,27 @@
 class ClientsController < ApplicationController
   before_action :set_client, only: [:show, :edit, :update, :destroy]
 
+ autocomplete :client, :nombre, :display_value => :nombre, :extra_data => [ :telefono, :email, :direccion, :rfc, :facebook, :linkedln] do |items|
+    respond_to do |format|
+     format.json { render :json => @items }
+    end
+  end
+
+
   # GET /clients
   # GET /clients.json
-  def index
-    @clients = Client.all
+ def index
+    if params[:q]
+      @clients = Client.where("nombre  LIKE '%"+params[:q]+"%'")
+    else
+      @clients = Client.all
+    end
+    #@clients = Client.all
+    #@clients = Client.find(:all,:conditions => ['nombre LIKE ?', "#{params[:q]}%"],  :limit => 8, :order => 'nombre')
+    respond_to do |format|
+      format.html
+      format.json { render :json => @clients }
+    end
   end
 
   # GET /clients/1
@@ -60,7 +77,7 @@ class ClientsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+   
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_client
@@ -69,6 +86,6 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:nombre, :telefono, :email, :direccion, :rfc, :facebook, :linkedln)
+      params.require(:client).permit(:rfc, :nombre, :telefono, :email, :direccion, :facebook, :linkedln)
     end
 end

@@ -42,6 +42,7 @@ class SalesController < ApplicationController
     else
       @sale.client.nombre = client.nombre
       @sale.client.direccion = client.direccion
+      @sale.client.telefono = client.telefono
     end 
 
     puts "Datos recibidos de la nueva venta"
@@ -114,7 +115,7 @@ class SalesController < ApplicationController
       # dice que paramentros quiere 
       # se pone todos los datos que queremos del cliente 
       #poner lo de los detalles de venta 
-      params.require(:client).permit(:id, :Rfc, :nombre, :direccion, :telefono, :email)
+      params.require(:client).permit(:id, :rfc, :nombre, :direccion, :telefono, :email)
     end
 
        #def detail_sales_params

@@ -1,37 +1,61 @@
 <%= form_for(@provider) do |f| %>
-  <% if @provider.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h2>
 
-      <ul>
-      <% @provider.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+    <div class="control-group<%= @provider.errors[:nombre].any? ? " error": "" %>">
 
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo_libro %><br>
-    <%= f.text_field :tipo_libro %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+<%= f.label :nombre, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :nombre, :class => 'text_field' %>
+
+<span class="help-inline">
+      <%= @provider.errors[:nombre].any? ? @provider.errors[:nombre].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+     
+<%#Campo Telefono/%>
+<div class="control-group<%= @provider.errors[:telefono].any? ? " error" : "" %>">
+   <%= f.label :telefono, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :telefono, :class => 'text_field' %>
+     <span class="help-inline">
+      <%= @provider.errors[:telefono].any? ? @provider.errors[:telefono].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo Email/%>
+
+ <div class="control-group<%= @provider.errors[:email].any? ? " error" : "" %>">
+   <%= f.label :email, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :email, :class => 'text_field' %>
+     <span class="help-inline">
+    <%= @provider.errors[:email].any? ? @provider.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
+   </div> 
+ </div>
+
+<%#Campo Direccion/%>
+
+<div class="control-group<%= @provider.errors[:direccion].any? ? " error" : "" %>">
+   <%= f.label :direccion, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :direccion, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @provider.errors[:direccion].any? ? @provider.errors[:direccion].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+<%#Campo Direccion/%>
+
+<div class="control-group<%= @provider.errors[:tipo_libro].any? ? " error" : "" %>">
+   <%= f.label :tipo_libro, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :tipo_libro, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @provider.errors[:tipo_libro].any? ? @provider.errors[:tipo_libro].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+<div class="actions">
+    <%= f.submit :Crear %>
   </div>
 <% end %>
+
