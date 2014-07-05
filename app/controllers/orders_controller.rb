@@ -15,6 +15,8 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     @order = Order.new
+    # asociar un nuevo cliente
+    @order.client = Client.new
   end
 
   # GET /orders/1/edit
@@ -25,6 +27,23 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(order_params)
+    client = Client.new(client_params)
+
+    if@order.client_id.nil?
+      @order.client = client
+    else
+     @order.client = client.nombre
+      @order.client = client.direccion
+     end
+    
+      puts "Datos recibidos del nuevo pedido"
+      
+      puts"Cliente>>" + @order.client_id.to_s + @order.client.nombre
+      puts "Books recibidos"
+      @order.orderDetails.each do |item|
+        puts "id:" + item.Books_id.to_s + ", p. u: " + item.precio.to_s + ", cantidad: " +  item.cantidad.to_s + ", descuento: " + item.descuento.to_s + ", total:" + item.total.to_s
+    end
+
 
     respond_to do |format|
       if @order.save
@@ -71,4 +90,9 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:employee_id, :client_id, :fechaPedido, :fechaParaEntregar, :fechaEntrega, :direccion, :cancelado, :enEspera, :entregado)
     end
+
+    def client_params
+      params.require(:client).permit(:id, :rfc, :nombre, :telefono, :email, :direccion, :facebook, :linkedIn)
+   end
 end
+ 

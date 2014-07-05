@@ -2,7 +2,7 @@
   <div class="control-group <%= @book.errors[:isbn].any? ? " error" : "" %>">
     <%= f.label :isbn, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :isbn, :class => 'text_field' %>
+      <%= f.text_field :isbn, :placeholder=>"isbn de libro" %>
       <span class="help-inline">
       <%= @book.errors[:isbn].any? ? @book.errors[:isbn].to_s[/\w([^"]*)/] : "" %></span>
     </div>
@@ -10,7 +10,7 @@
   <div class="control-group <%= @book.errors[:titulo].any? ? " error" : "" %>">
     <%= f.label :titulo, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :titulo, :class => 'text_field' %>
+      <%= f.text_field :titulo, :placeholder=>"Titulo de libro" %>
       <span class="help-inline">
       <%= @book.errors[:titulo].any? ? @book.errors[:titulo].to_s[/\w([^"]*)/] : "" %></span>
     </div>
@@ -18,7 +18,7 @@
   <div class="control-group <%= @book.errors[:autor].any? ? " error" : "" %>">
     <%= f.label :autor, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :autor, :class => 'text_field' %>
+      <%= f.text_field :autor, :placeholder=>"Autor de libro" %>
        <span class="help-inline">
       <%= @book.errors[:autor].any? ? @book.errors[:autor].to_s[/\w([^"]*)/] : "" %></span>
     </div>
@@ -26,7 +26,7 @@
   <div class="control-group <%= @book.errors[:editorial].any? ? " error" : "" %>">
     <%= f.label :editorial, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :editorial, :class => 'text_field' %>
+      <%= f.text_field :editorial, :placeholder =>"Editorial de libro"%>
        <span class="help-inline">
       <%= @book.errors[:editorial].any? ? @book.errors[:editorial].to_s[/\w([^"]*)/] : "" %></span>
     </div>
@@ -34,7 +34,7 @@
   <div class="control-group <%= @book.errors[:precio].any? ? " error" : "" %>">
     <%= f.label :precio, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :precio, :class => 'text_field' %>
+      <%= f.text_field :precio, :placeholder => "Precio de libro"%>
       <span class="help-inline">
       <%= @book.errors[:precio].any? ? @book.errors[:precio].to_s[/\w([^"]*)/] : "" %></span>
     </div>
@@ -42,15 +42,15 @@
   <div class="control-group <%= @book.errors[:existencias].any? ? " error" : "" %>">
     <%= f.label :existencias, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :existencias, :class => 'text_field' %>
+      <%= f.text_field :existencias, :placeholder=> "existencias de libro" %>
       <span class="help-inline">
       <%= @book.errors[:existencias].any? ? @book.errors[:existencias].to_s[/\w([^"]*)/] : "" %></span>
     </div>
   </div>
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+     <button name="guardarLibro" id="guardarLibro" type="button" class="btn btn-primary">Registrar Libro</button>
+    <%= link_to t('.Cancelar', :default => t("helpers.links.Cancelar")),
                 books_path, :class => 'btn' %>
   </div>
 <% end %>

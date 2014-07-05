@@ -1,62 +1,72 @@
 <%= form_for @order, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :employee_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :employee_id, :class => 'text_field' %>
+<% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error")%> prohibited this sale from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
     </div>
+  <% end %>
+
+  <div id="datosClient">
+   <fieldset>
+   <legend >  Datos del cliente</legend>
+    <%= f.text_field :client_id %>
+
+   <%= fields_for @order.client do |c| %>
+    <%= c.hidden_field :id %>
+
+    <%= c.text_field :nombre,
+     
+     :placeholder => "Nombre del cliente" %>
+      <%= c.text_field :direccion, :placeholder => "Domicilio" %>
+      <%= c.text_field :email, :placeholder => "Email del cliente" %>
+      <%= c.text_field :telefono, :placeholder => "Teléfono del cliente" %>
+    <% end %>
+   </fieldset>
   </div>
-  <div class="control-group">
-    <%= f.label :client_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :client_id, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :fechaPedido, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :fechaPedido, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :fechaParaEntregar, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :fechaParaEntregar, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :fechaEntrega, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :fechaEntrega, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :direccion, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :direccion, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :cancelado, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :cancelado, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :enEspera, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :enEspera, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :entregado, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :entregado, :class => 'text_field' %>
-    </div>
-  </div>
+  
+  <table id="orderDetailsTable" cellpadding="0">
+  <thead>
+    <th>order_id</th>
+    <th>book_id</th>
+    <th>cantidad</th>
+  </thead>
+  <tbody>
+    <%@order.detailOrders.each do|item| %>
+    <%= f.fields_for :detailOrders, item do |d| %>
+      <tr>
+      <td><%= d.text_field :order_id, :class =>"idOrder" %></td>
+      <td><input type="text" id="nombreProducto" value="" ></td>
+      <td><%= d.text_field :book_id, :class =>"idLibropedido" %></td>
+      <td><%= d.text_field :cantidad, :class =>"cantidadVender"%></td>
+      </tr>
+  <% end %>
+  <% end %>     
+  </tbody>
+  </thead>
+  <div id="DatosPedido">
+  <fieldset>
+    <legend>Datos del Pedido</legend>
+    
+    <%= f.text_field :employee_id, :placeholder=>"EmpleadoId" %>
+    <%= f.text_field :fechaPedido, :placeholder =>"Fecha del pedido" %>
+    <%= f.text_field :fechaParaEntregar, :placeholder =>"Fecha para entregar pedido" %>
+      <%= f.text_field :fechaEntrega, :placeholder => "Fecha Entregada de pedido" %>
+    <%= f.text_field :direccion, :placeholder =>"Direccion del pedido" %>
+    <%= f.text_field :cancelado, :placeholder =>"Pedido Cancelado" %>
+     <%= f.text_field :enEspera, :placeholder =>"Pedido en espera"%>
+     <%= f.text_field :entregado, :placeholder =>"Pedido en espera"%>
+ 
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+   <button name="guardarPedido" id="guardarPedido" type="button" class="btn btn-primary">Registrar pedido</button>
+    <%= link_to t('.cancelar', :default => t("helpers.links.cancelar")),
                 orders_path, :class => 'btn' %>
   </div>
 <% end %>
+
+
