@@ -1,49 +1,37 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Order -%>
+<div class="page-header">
+  <h1>Ver Pedido</h1>
+</div>
 
-<p>
-  <strong>Employee:</strong>
-  <%= @order.employee_id %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:employee_id) %>:</strong></dt>
+  <dd><%= @order.employee_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:client_id) %>:</strong></dt>
+  <dd><%= @order.client_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fechaPedido) %>:</strong></dt>
+  <dd><%= @order.fechaPedido %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fechaParaEntregar) %>:</strong></dt>
+  <dd><%= @order.fechaParaEntregar %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fechaEntrega) %>:</strong></dt>
+  <dd><%= @order.fechaEntrega %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:direccion) %>:</strong></dt>
+  <dd><%= @order.direccion %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:cancelado) %>:</strong></dt>
+  <dd><%= @order.cancelado %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:enEspera) %>:</strong></dt>
+  <dd><%= @order.enEspera %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:entregado) %>:</strong></dt>
+  <dd><%= @order.entregado %></dd>
+</dl>
 
-<p>
-  <strong>Client:</strong>
-  <%= @order.client_id %>
-</p>
-
-<p>
-  <strong>Fechapedido:</strong>
-  <%= @order.fechaPedido %>
-</p>
-
-<p>
-  <strong>Fechaparaentregar:</strong>
-  <%= @order.fechaParaEntregar %>
-</p>
-
-<p>
-  <strong>Fechaentrega:</strong>
-  <%= @order.fechaEntrega %>
-</p>
-
-<p>
-  <strong>Direccion:</strong>
-  <%= @order.direccion %>
-</p>
-
-<p>
-  <strong>Cancelado:</strong>
-  <%= @order.cancelado %>
-</p>
-
-<p>
-  <strong>Enespera:</strong>
-  <%= @order.enEspera %>
-</p>
-
-<p>
-  <strong>Entregado:</strong>
-  <%= @order.entregado %>
-</p>
-
-<%= link_to 'Editar', edit_order_path(@order) %> |
-<%= link_to 'Regresar', orders_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              orders_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_order_path(@order), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              order_path(@order),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

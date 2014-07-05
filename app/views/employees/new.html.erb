@@ -1,5 +1,5 @@
-<h1>Nuevo Empleado</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Regresar', employees_path %>
+<%- model_class = Employee -%>
+<div class="page-header">
+  <h1>Nuevo Empleado</h1>
+</div>
+<%= render :partial => 'form' %>

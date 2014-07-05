@@ -1,6 +1,5 @@
-<h1>Editar Detalles de Pedidos</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Ver', @detail_order %> |
-<%= link_to 'Regresar', detail_orders_path %>
+<%- model_class = DetailOrder -%>
+<div class="page-header">
+  <h1>Editar Detalle de Pedidos</h1>
+</div>
+<%= render :partial => 'form' %>

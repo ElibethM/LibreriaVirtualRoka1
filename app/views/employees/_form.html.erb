@@ -1,53 +1,80 @@
-<%= form_for(@employee) do |f| %>
-  <% if @employee.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
-
-      <ul>
-      <% @employee.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_for @employee, :html => { :class => 'form-horizontal' } do |f| %>
+ <div class="control-group <%= @employee.errors[:nombre].any? ? " error" : "" %>">
+    <%= f.label :nombre, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nombre, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:nombre].any? ? @employee.errors[:nombre].to_s[/\w([^"]*)/] : "" %></span>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group <%= @employee.errors[:usuario].any? ? " error" : "" %>">
+    <%= f.label :usuario, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :usuario, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:usuario].any? ? @employee.errors[:usuario].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:password].any? ? " error" : "" %>">
+    <%= f.label :password, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :password, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:password].any? ? @employee.errors[:password].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+    <div class="control-group <%= @employee.errors[:email].any? ? " error" : "" %>">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:email].any? ? @employee.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:direccion].any? ? " error" : "" %>">
+    <%= f.label :direccion, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :direccion, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:direccion].any? ? @employee.errors[:direccion].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:telefono].any? ? " error" : "" %>">
+    <%= f.label :telefono, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :telefono, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:telefono].any? ? @employee.errors[:telefono].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:meta].any? ? " error" : "" %>">
+    <%= f.label :meta, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :meta, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:meta].any? ? @employee.errors[:meta].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:gerente].any? ? " error" : "" %>">
+    <%= f.label :gerente, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :gerente, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:gerente].any? ? @employee.errors[:gerente].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @employee.errors[:vendedor].any? ? " error" : "" %>">
+    <%= f.label :vendedor, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :vendedor, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @employee.errors[:vendedor].any? ? @employee.errors[:vendedor].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :usuario %><br>
-    <%= f.text_field :usuario %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br>
-    <%= f.text_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :meta %><br>
-    <%= f.number_field :meta %>
-  </div>
-  <div class="field">
-    <%= f.label :gerente %><br>
-    <%= f.check_box :gerente %>
-  </div>
-  <div class="field">
-    <%= f.label :vendedor %><br>
-    <%= f.check_box :vendedor %>
-  </div>
-  <div class="actions">
-    <%= f.submit :Crear %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                employees_path, :class => 'btn' %>
   </div>
 <% end %>

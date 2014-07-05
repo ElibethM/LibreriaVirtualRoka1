@@ -1,33 +1,40 @@
-<CENTER><h1>Listado de provedores</h1></CENTER>
-
-<CENTER><table>
+<center><h1>Provedores</h1></center>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Telefono</th>
-      <th>Email</th>
-      <th>Direccion</th>
-      <th>Tipolibro</th>
-      <th colspan="3"></th>
+      <th>id</th>
+      <th>nombre</th>
+      <th>telefono</th>
+      <th>email</th>
+      <th>direccion</th>
+      <th>tipoLibro</th>
+      <th colspan="25"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @providers.each do |provider| %>
       <tr>
+        <td><%= link_to provider.id, provider_path(provider) %></td>
         <td><%= provider.nombre %></td>
         <td><%= provider.telefono %></td>
         <td><%= provider.email %></td>
         <td><%= provider.direccion %></td>
         <td><%= provider.tipoLibro %></td>
-        <td><%= link_to 'Ver', provider %></td>
-        <td><%= link_to 'Editar', edit_provider_path(provider) %></td>
-        <td><%= link_to 'Eliminar', provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l provider.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_provider_path(provider), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      provider_path(provider),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
-</table></CENTER>
+</table>
 
-<br>
-
-<CENTER><%= link_to 'Nuevo Proveedor', new_provider_path %></CENTER>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_provider_path,
+            :class => 'btn btn-primary' %>

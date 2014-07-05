@@ -1,6 +1,5 @@
-<h1>Editar Ventas</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Ver', @sale %> |
-<%= link_to 'Regresar', sales_path %>
+<%- model_class = Sale -%>
+<div class="page-header">
+  <h1>Editar Ventas</h1>
+</div>
+<%= render :partial => 'form' %>

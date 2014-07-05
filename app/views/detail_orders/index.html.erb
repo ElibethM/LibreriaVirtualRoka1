@@ -1,29 +1,36 @@
-<CENTER><h1>Listado Detalles de Pedidos</h1></CENTER>
-
-<CENTER><table>
+<center><h1>Detalles de Pedidos</h1></center>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Pedido</th>
-      <th>Libro</th>
-      <th>Cantidad</th>
-      <th colspan="3"></th>
+      <th>id</th>
+      <th>order_id</th>
+      <th>book_id</th>
+      <th>cantidad</th>
+      <th colspan="25"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @detail_orders.each do |detail_order| %>
       <tr>
+        <td><%= link_to detail_order.id, detail_order_path(detail_order) %></td>
         <td><%= detail_order.order_id %></td>
         <td><%= detail_order.book_id %></td>
         <td><%= detail_order.cantidad %></td>
-        <td><%= link_to 'Ver', detail_order %></td>
-        <td><%= link_to 'Editar', edit_detail_order_path(detail_order) %></td>
-        <td><%= link_to 'Eliminar', detail_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l detail_order.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_detail_order_path(detail_order), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      detail_order_path(detail_order),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
-</table></CENTER>
+</table>
 
-<br>
-
-<CENTER><%= link_to 'Nuevo detalle Pedido', new_detail_order_path %></CENTER>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_detail_order_path,
+            :class => 'btn btn-primary' %>

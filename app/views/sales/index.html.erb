@@ -1,27 +1,34 @@
-<CENTER><h1>Listado de Ventas</h1></CENTER>
-
-<CENTER><table>
+<center><h1>Ventas</h1></center>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Client</th>
-      <th>Fechaventa</th>
-      <th colspan="3"></th>
+      <th>id</th>
+      <th>client_id</th>
+      <th>fechaVenta</th>
+      <th colspan="25"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @sales.each do |sale| %>
       <tr>
+        <td><%= link_to sale.id, sale_path(sale) %></td>
         <td><%= sale.client_id %></td>
         <td><%= sale.fechaVenta %></td>
-        <td><%= link_to 'Ver', sale %></td>
-        <td><%= link_to 'Editar', edit_sale_path(sale) %></td>
-        <td><%= link_to 'Eliminar', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l sale.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_sale_path(sale), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      sale_path(sale),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
-</table></CENTER>
+</table>
 
-<br>
-
-<CENTER><%= link_to 'Nueva Venta', new_sale_path %></CENTER>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_sale_path,
+            :class => 'btn btn-primary' %>

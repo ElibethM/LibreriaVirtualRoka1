@@ -4,8 +4,15 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+    if params[:search]
+      @books = Book.where("titulo LIKE'%"+ params[:search]+ "%'")
+      if @books.size.zero?
+        @books = Book.all
+        end
+      else
+        @books = Book.all
   end
+end
 
   # GET /books/1
   # GET /books/1.json
@@ -24,18 +31,22 @@ class BooksController < ApplicationController
   # POST /books
   # POST /books.json
   def create
-    @book = Book.new(book_params)
-
-    respond_to do |format|
+     @book = Book.new(book_params)
+     respond_to do |format|
+      if @book.valid?
       if @book.save
-        format.html { redirect_to @book, notice: 'Book was successfully created.' }
+        format.html { redirect_to @book, notice: 'Client was successfully created.' }
         format.json { render :show, status: :created, location: @book }
       else
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
+    else
+      format.html { render :new}
+      format.json {render json: @book.errors, status: :unprocessable_entity}
     end
   end
+end
 
   # PATCH/PUT /books/1
   # PATCH/PUT /books/1.json
@@ -61,23 +72,21 @@ class BooksController < ApplicationController
     end
   end
 
+ # def find
+ # respond_to do |format|
+  # if params[:codigo]
+   # @book = Book.find_by isbn: params[:codigo]
+    # end
+    #if @book.nil?
+     #@book = Book.new
+      #format.html{render :new}
+      #else
+      #format.html{render :show}
+     #end
+      #format.json{render json: @book, status: :ok}
+    #end
+  #end
 
-   def find
-    respond_to do |format|
-      if params[:codigo]
-        @book = Book.find_by isbn: params[:codigo]
-      end
-      if @book.nil?
-        @book = Book.new
-        format.html{render :new}
-      else
-        format.html{render :show}
-      end
-      format.json{render json: @book, status: :ok}
-    end
-  end
-
-  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_book

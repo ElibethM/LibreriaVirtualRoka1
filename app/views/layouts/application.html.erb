@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LibreriaVirtualRoka</title>
+  <title>Libreria Roka</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header>
-<nav>
-<center><b><%= link_to 'EMPLEADOS', employees_path %></b>
-<b><%= link_to 'LIBROS', books_path %></b>
-<b><%= link_to 'CLIENTES', clients_path %></b>
-<b><%= link_to 'PEDIDOS', orders_path %></b>
-<b><%= link_to 'DETALLES DE PEDIDOS', detail_orders_path %></b>
-<b><%= link_to 'PROMOCIONES', promotions_path %></b>
-<b><%= link_to 'PROVEEDORES', providers_path %></b>
-<b><%= link_to 'DETALLES DE VENTA', sale_details_path %></b>
-<b><%= link_to 'VENTA', sales_path %></b></center>
-</header>
-
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
-<%= yield %>
-
-<div class="container">
+  <div class="container">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="brand" >LIBRERIA VIRTUAL ROKA</div>
             <ul id="nav">
                 <p class="navbar-text pull-right">
                   <% if user_signed_in? %>
@@ -40,6 +23,28 @@
                     <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
                     <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
                   <% end %>
-
+                  </p>
+                  </ul>
+        <div class="container">
+          <div class="nav-collapse">
+            <ul class="nav nav-pills">                
+              <li><%= link_to 'EMPLEADOS', employees_path %></li>      
+              <li><%= link_to 'LIBROS', books_path %></li>
+              <li><%= link_to 'CLIENTES', clients_path %></li>
+              <li><%= link_to 'PEDIDOS', orders_path %></li>
+              <li><%= link_to 'DETALLES DE PEDIDOS', detail_orders_path %></li>
+              <li><%= link_to 'PROMOCIONES', promotions_path %></li>
+              <li><%= link_to 'PROVEEDORES', providers_path %></li>
+              <li><%= link_to 'DETALLES DE VENTA', sale_details_path %></li>
+              <li><%= link_to 'VENTA', sales_path %><li>         
+            </ul>             
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="container">
+      <%= yield %>
+    </div>  
+  </div>
 </body>
 </html>

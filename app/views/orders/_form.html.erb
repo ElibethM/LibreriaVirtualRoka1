@@ -1,53 +1,62 @@
-<%= form_for(@order) do |f| %>
-  <% if @order.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
-
-      <ul>
-      <% @order.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_for @order, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :employee_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :employee_id, :class => 'text_field' %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :client_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :client_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fechaPedido, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :fechaPedido, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fechaParaEntregar, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :fechaParaEntregar, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fechaEntrega, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :fechaEntrega, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :direccion, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :direccion, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :cancelado, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cancelado, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :enEspera, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :enEspera, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :entregado, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :entregado, :class => 'text_field' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :employee_id %><br>
-    <%= f.number_field :employee_id %>
-  </div>
-  <div class="field">
-    <%= f.label :client_id %><br>
-    <%= f.number_field :client_id %>
-  </div>
-  <div class="field">
-    <%= f.label :fechaPedido %><br>
-    <%= f.datetime_select :fechaPedido %>
-  </div>
-  <div class="field">
-    <%= f.label :fechaParaEntregar %><br>
-    <%= f.datetime_select :fechaParaEntregar %>
-  </div>
-  <div class="field">
-    <%= f.label :fechaEntrega %><br>
-    <%= f.datetime_select :fechaEntrega %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :cancelado %><br>
-    <%= f.check_box :cancelado %>
-  </div>
-  <div class="field">
-    <%= f.label :enEspera %><br>
-    <%= f.check_box :enEspera %>
-  </div>
-  <div class="field">
-    <%= f.label :entregado %><br>
-    <%= f.check_box :entregado %>
-  </div>
-  <div class="actions">
-    <%= f.submit :Crear %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                orders_path, :class => 'btn' %>
   </div>
 <% end %>

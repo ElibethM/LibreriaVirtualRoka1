@@ -1,45 +1,66 @@
-<%= form_for(@client) do |f| %>
-  <% if @client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
 
-      <ul>
-      <% @client.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+
+<%= form_for @client, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group <%= @client.errors[:rfc].any? ? " error" : "" %>">
+    <%= f.label :rfc, :class => 'control-label' %>
+    <div class="controls">
+    <%= f.text_field :rfc, :class => 'text_field' %>
+    <span class="help-inline">
+      <%= @client.errors[:rfc].any? ? @client.errors[:rfc].to_s[/\w([^"]*)/] : "" %></span>
+  </div>
+  </div>
+  <div class="control-group <%= @client.errors[:nombre].any? ? " error" : "" %>">
+    <%= f.label :nombre, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nombre, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:nombre].any? ? @client.errors[:nombre].to_s[/\w([^"]*)/] : "" %></span>
     </div>
-  <% end %>
+  </div>
+   <div class="control-group <%= @client.errors[:telefono].any? ? " error" : "" %>">
+    <%= f.label :telefono, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :telefono, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:telefono].any? ? @client.errors[:telefono].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @client.errors[:email].any? ? " error" : "" %>">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:email].any? ? @client.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @client.errors[:direccion].any? ? " error" : "" %>">
+    <%= f.label :direccion, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :direccion, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:direccion].any? ? @client.errors[:direccion].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @client.errors[:facebook].any? ? " error" : "" %>">
+    <%= f.label :facebook, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :facebook, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:facebook].any? ? @client.errors[:facebook].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
+  <div class="control-group <%= @client.errors[:linkedIn].any? ? " error" : "" %>">
+    <%= f.label :linkedIn, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :linkedIn, :class => 'text_field' %>
+      <span class="help-inline">
+      <%= @client.errors[:linkedIn].any? ? @client.errors[:linkedIn].to_s[/\w([^"]*)/] : "" %></span>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :rfc %><br>
-    <%= f.number_field :rfc %>
-  </div>
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :facebook %><br>
-    <%= f.text_field :facebook %>
-  </div>
-  <div class="field">
-    <%= f.label :linkedIn %><br>
-    <%= f.text_field :linkedIn %>
-  </div>
-  <div class="actions">
-    <%= f.submit :Crear %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                clients_path, :class => 'btn' %>
   </div>
 <% end %>

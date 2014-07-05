@@ -1,35 +1,42 @@
-<CENTER><h1>Listado de Detalles Ventas</h1></CENTER>
-
-<CENTER><table>
+<center><h1>Detalles de Ventas</h1></center>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Sale</th>
-      <th>Book</th>
-      <th>Cantidad</th>
-      <th>Precio</th>
-      <th>Descuento</th>
-      <th>Total</th>
-      <th colspan="3"></th>
+      <th>id</th>
+      <th>sale_id</th>
+      <th>book_id</th>
+      <th>cantidad</th>
+      <th>precio</th>
+      <th>descuento</th>
+      <th>total</th>
+      <th colspan="25"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @sale_details.each do |sale_detail| %>
       <tr>
+        <td><%= link_to sale_detail.id, sale_detail_path(sale_detail) %></td>
         <td><%= sale_detail.sale_id %></td>
         <td><%= sale_detail.book_id %></td>
         <td><%= sale_detail.cantidad %></td>
         <td><%= sale_detail.precio %></td>
         <td><%= sale_detail.descuento %></td>
         <td><%= sale_detail.total %></td>
-        <td><%= link_to 'Ver', sale_detail %></td>
-        <td><%= link_to 'Editar', edit_sale_detail_path(sale_detail) %></td>
-        <td><%= link_to 'Eliminar', sale_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l sale_detail.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_sale_detail_path(sale_detail), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      sale_detail_path(sale_detail),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
-</table></CENTER>
+</table>
 
-<br>
-
-<CENTER><%= link_to 'Nuevo detalle Venta', new_sale_detail_path %></CENTER>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_sale_detail_path,
+            :class => 'btn btn-primary' %>

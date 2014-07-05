@@ -4,7 +4,14 @@ class ClientsController < ApplicationController
   # GET /clients
   # GET /clients.json
   def index
-    @clients = Client.all
+    if params[:busqueda]
+      @clients = Client.where("nombre LIKE '%" + params[:busqueda]+"%'")
+      if @clients.size.zero?
+        @clients = Client.all 
+        end
+      else
+       @clients= Client.all    
+    end
   end
 
   # GET /clients/1
@@ -27,6 +34,7 @@ class ClientsController < ApplicationController
     @client = Client.new(client_params)
 
     respond_to do |format|
+      if @client.valid?
       if @client.save
         format.html { redirect_to @client, notice: 'Client was successfully created.' }
         format.json { render :show, status: :created, location: @client }
@@ -34,8 +42,12 @@ class ClientsController < ApplicationController
         format.html { render :new }
         format.json { render json: @client.errors, status: :unprocessable_entity }
       end
+    else
+      format.html { render :new}
+      format.json {render json: @client.errors, status: :unprocessable_entity}
     end
   end
+end
 
   # PATCH/PUT /clients/1
   # PATCH/PUT /clients/1.json

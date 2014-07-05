@@ -1,6 +1,5 @@
-<h1>Editar Pedidos</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Ver', @order %> |
-<%= link_to 'Regresar', orders_path %>
+<%- model_class = Order -%>
+<div class="page-header">
+  <h1>Editar Pedidos</h1>
+</div>
+<%= render :partial => 'form' %>

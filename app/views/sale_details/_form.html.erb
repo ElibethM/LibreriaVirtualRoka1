@@ -1,41 +1,44 @@
-<%= form_for(@sale_detail) do |f| %>
-  <% if @sale_detail.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@sale_detail.errors.count, "error") %> prohibited this sale_detail from being saved:</h2>
-
-      <ul>
-      <% @sale_detail.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_for @sale_detail, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :sale_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :sale_id, :class => 'text_field' %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :book_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :book_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :cantidad, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cantidad, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :precio, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :precio, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :descuento, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :descuento, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :total, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :total, :class => 'text_field' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :sale_id %><br>
-    <%= f.number_field :sale_id %>
-  </div>
-  <div class="field">
-    <%= f.label :book_id %><br>
-    <%= f.number_field :book_id %>
-  </div>
-  <div class="field">
-    <%= f.label :cantidad %><br>
-    <%= f.number_field :cantidad %>
-  </div>
-  <div class="field">
-    <%= f.label :precio %><br>
-    <%= f.text_field :precio %>
-  </div>
-  <div class="field">
-    <%= f.label :descuento %><br>
-    <%= f.number_field :descuento %>
-  </div>
-  <div class="field">
-    <%= f.label :total %><br>
-    <%= f.text_field :total %>
-  </div>
-  <div class="actions">
-    <%= f.submit :Crear %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                sale_details_path, :class => 'btn' %>
   </div>
 <% end %>

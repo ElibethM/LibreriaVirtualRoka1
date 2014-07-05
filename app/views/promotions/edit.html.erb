@@ -1,6 +1,5 @@
-<h1>Editar promocion</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Ver', @promotion %> |
-<%= link_to 'Regresar', promotions_path %>
+<%- model_class = Promotion -%>
+<div class="page-header">
+  <h1>Editar Promoción</h1>
+</div>
+<%= render :partial => 'form' %>
