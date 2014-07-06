@@ -1,4 +1,5 @@
 <%= form_for(@promotion) do |f| %>
+ <!-- 
   <% if @promotion.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@promotion.errors.count, "error") %> prohibited this promotion from being saved:</h2>
@@ -10,27 +11,48 @@
       </ul>
     </div>
   <% end %>
+    -->
+<%#Campo Cleint_id /%>
 
-  <div class="field">
-    <%= f.label :client_id %><br>
-    <%= f.number_field :client_id %>
-  </div>
-  <div class="field">
-    <%= f.label :employee_id %><br>
-    <%= f.number_field :employee_id %>
-  </div>
+<div class="control-group<%= @promotion.errors[:client_id].any? ? " error" : "" %>">
+   <%= f.label :client_id, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :client_id, :class => 'text_field' %>
+     <%#Obtener solo el mensaje con la expresion regular /\w([^]*)/%>
+      <span class="help-inline">
+      <%= @promotion.errors[:client_id].any? ? @promotion.errors[:client_id].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo employee_id/%>
+<div class="control-group<%= @promotion.errors[:employee_id].any? ? " error" : "" %>">
+   <%= f.label :employee_id, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :employee_id, :class => 'text_field' %>
+     <span class="help-inline">
+      <%= @promotion.errors[:employee_id].any? ? @promotion.errors[:employee_id].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo fecha/%>
+
   <div class="field">
     <%= f.label :fecha %><br>
     <%= f.date_select :fecha %>
   </div>
-  <div class="field">
-    <%= f.label :medioComunicacion %><br>
-    <%= f.text_field :medioComunicacion %>
-  </div>
-  <div class="field">
-    <%= f.label :acuerdo %><br>
-    <%= f.text_area :acuerdo %>
-  </div>
+
+<%#Campo acuerdo/%>
+
+ <div class="control-group<%= @promotion.errors[:acuerdo].any? ? " error" : "" %>">
+   <%= f.label :acuerdo, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :acuerdo, :class => 'text_field' %>
+     <span class="help-inline">
+    <%= @promotion.errors[:acuerdo].any? ? @promotion.errors[:acuerdo].to_s[/\w([^"]*)/] : "" %></span>
+   </div> 
+ </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

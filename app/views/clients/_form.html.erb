@@ -1,45 +1,84 @@
 <%= form_for(@client) do |f| %>
-  <% if @client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
 
-      <ul>
-      <% @client.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+ <%#Campo nombre/%>
 
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :rfc %><br>
-    <%= f.text_field :rfc %>
-  </div>
-  <div class="field">
-    <%= f.label :facebook %><br>
-    <%= f.text_field :facebook %>
-  </div>
-  <div class="field">
-    <%= f.label :linkedln %><br>
-    <%= f.text_field :linkedln %>
-  </div>
+<div class="control-group<%= @client.errors[:nombre].any? ? " error" : "" %>">
+   <%= f.label :nombre, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :nombre, :class => 'text_field' %>
+     <%#Obtener solo el mensaje con la expresion regular /\w([^]*)/%>
+      <span class="help-inline">
+      <%= @client.errors[:nombre].any? ? @client.errors[:nombre].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo Telefono/%>
+<div class="control-group<%= @client.errors[:telefono].any? ? " error" : "" %>">
+   <%= f.label :telefono, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :telefono, :class => 'text_field' %>
+     <span class="help-inline">
+      <%= @client.errors[:telefono].any? ? @client.errors[:telefono].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo Email/%>
+
+ <div class="control-group<%= @client.errors[:email].any? ? " error" : "" %>">
+   <%= f.label :email, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :email, :class => 'text_field' %>
+     <span class="help-inline">
+    <%= @client.errors[:email].any? ? @client.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
+   </div> 
+ </div>
+
+ <%#Campo Direccion/%>
+
+<div class="control-group<%= @client.errors[:direccion].any? ? " error" : "" %>">
+   <%= f.label :direccion, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :direccion, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @client.errors[:email].any? ? @client.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+ <%#Campo RFC/%>
+
+<div class="control-group<%= @client.errors[:rfc].any? ? " error" : "" %>">
+   <%= f.label :rfc, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :rfc, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @client.errors[:rfc].any? ? @client.errors[:rfc].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+
+ <%#Campo Facebook/%>
+
+<div class="control-group<%= @client.errors[:facebook].any? ? " error" : "" %>">
+   <%= f.label :facebook, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :facebook, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @client.errors[:facebook].any? ? @client.errors[:facebook].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
+<%#Campo Linkedln/%>
+
+<div class="control-group<%= @client.errors[:linkedln].any? ? " error" : "" %>">
+   <%= f.label :linkedln, :class => 'control-label' %>
+   <div class="controls">
+     <%= f.text_field :linkedln, :class => 'text_field' %>
+     <span class="help-inline">
+     <%= @client.errors[:linkedln].any? ? @client.errors[:linkedln].to_s[/\w([^"]*)/] : "" %></span>
+   </div>
+ </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :Crear %>
   </div>
 <% end %>

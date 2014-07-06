@@ -3,8 +3,15 @@ class ClientsController < ApplicationController
 
   # GET /clients
   # GET /clients.json
-  def index
-    @clients = Client.all
+ def index
+      if params[:busqueda]
+        @clients = Client.where("nombre LIKE '%"+params[:busqueda]+"%'")
+        if @clients.size.zero?
+        @clients = Client.all 
+        end
+      else
+       @clients = Client.all    
+    end
   end
 
   # GET /clients/1
@@ -60,6 +67,22 @@ class ClientsController < ApplicationController
       format.json { head :no_content }
     end
   end
+   def findrfc
+
+    respond_to do |format|
+      if params[:rfc]
+        @client = Client.find_by rfc: params[:rfc]
+      end
+      if @client.nil?
+        @client = Client.new
+        format.html { render :new } 
+      else
+        format.html { render :show } 
+      end
+      format.json { render json: @client, status: :ok }
+      #format.json { render json: @product, estado: :ok }
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -69,6 +92,6 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:nombre, :telefono, :email, :direccion, :rfc, :facebook, :linkedln)
+      params.require(:client).permit(:rfc, :nombre, :telefono, :email, :direccion, :facebook, :linkedln)
     end
 end

@@ -1,5 +1,10 @@
 <h1>Listing clients</h1>
-
+<form class="form-search">
+  <div class="input-append">
+  <input type="text" id="busqueda" name="busqueda" placeholder= "Buscar por nombre"> 
+  <button type="submit">Buscar</button>
+       </div>
+</form> 
 <table>
   <thead>
     <tr>
@@ -24,9 +29,9 @@
         <td><%= client.rfc %></td>
         <td><%= client.facebook %></td>
         <td><%= client.linkedln %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
-        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', client %></td>
+        <td><%= link_to 'Editar', edit_client_path(client) %></td>
+        <td><%= link_to 'Eliminar', client, method: :delete, data: { confirm: '¿Estas  seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New Client', new_client_path %>
+<%= link_to 'Crear nuevo cliente', new_client_path %>
