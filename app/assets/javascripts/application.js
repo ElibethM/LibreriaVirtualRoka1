@@ -19,6 +19,10 @@ $(document).ready(function(){
 
   $('#clavelibro').on("change",function() {
     //pasar a cantidad
+    $("#descuentolibro").focus();
+  });
+  $('#descuentolibro').on("change",function() {
+    //pasar a cantidad
     $("#cantidadlibro").focus();
   });
 
@@ -34,19 +38,20 @@ $(document).ready(function(){
     //enviar formulario
     $("#new_sale").submit();
   });
- $('#Nombrecliente').on("keypress",function(event) {
+
+ $('#claveCliente').on("keypress",function(event) {
     //buscar el cliente por nombre y agregarlo
     if ( event.which == 13)
     {
       //agregaLibro($('#clavelibro').val()); 
     //  alert("Hemos presionado para realizar busqueda de un cliente: " + $("#clavecliente").val().toLowerCase());
-      var Nombrecliente = $("#Nombrecliente").val().toLowerCase();
-      buscarCliente($("#Nombrecliente").val().toLowerCase());
+      var nombreCliente = $("#claveCliente").val().toLowerCase();
+      buscarCliente($("#claveCliente").val().toLowerCase());
     }
   });
 
 
-});
+  });
 
 function agregaLibro(Isbn){
   var index = $(".idLibroVender").length;
@@ -88,11 +93,50 @@ function agregaLibro(Isbn){
     });
   }
 
+
+function buscarCliente(rfc){
+   if(rfc == "" || rfc == NaN)
+    {
+      alert("ingrese el el nombre del cliente.");
+      ocultarDatosCliente(); 
+      return;
+    } 
+
+    $.ajax({
+    dataType: "json",
+    url: "http://localhost:3000/clients/findrfc.json?rfc=" + rfc.toLowerCase() })
+    .done(function(data) {
+      if(data.id == null){
+        alert("No se encontró el cliente."); 
+        mostrarDatosCliente();
+        $("#claveCliente").focus(); 
+        $("#nombreCliente").val("");
+        $("#direccionCliente").val("");
+        $("#emailCliente").val("");
+        $("#telefonoCliente").val("");           
+        return;
+      }
+      else{
+        //alert("Se ha encontrado un cliente.");    
+        mostrarDatosCliente();
+        $("#nombreCliente").val(data.nombre);        
+        $("#direccionCliente").val(data.direccion);
+        $("#emailcliente").val(data.email);
+        $("#telefonocliente").val(data.telefono);
+
+      }
+
+    });
+
+ alert("ingrese el el nombre del cliente.");
+
+  }
+
   function resetAgregaLibro(){
     $("#cantidadlibro").val("");
     $('#clavelibro').val("");
     $('#clavelibro').focus();
-    $('#descuentolibro').val(0);
+    $('#descuentolibro').val("");
   }
 
   function calculaTotales(){

@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LibreriaVirtualRoka</title>
+  <title>Proyecto</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<span><%= link_to 'Ventas', sales_path%></span>
-  <span><%= link_to 'Clientes', clients_path%></span>
-  <span><%= link_to 'Libros', books_path%></span>
+
+<header> <center> <h1>Bienvenido a la Libreria Virtual ROKA</h1> </center></header>
+
+<center><h3>
+		<spean> <%= link_to 'Provedores', providers_path %> </spean>
+		<spean> <%= link_to 'Libros', providers_path %> </spean>
+		<spean> <%= link_to 'Pedidos', orders_path %> </spean>
+		<spean> <%= link_to 'Promociones', promotions_path %> </spean>
+		<spean> <%= link_to 'Clientes', clients_path %> </spean>
+		<spean> <%= link_to 'Ventas', sales_path %> </spean>
+		<spean> <%= link_to 'Empleados', employees_path %> </spean>
+</h3></center>
 
 
 <%= yield %>

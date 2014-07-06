@@ -1,28 +1,42 @@
 <h1>Listing promotions</h1>
+<!--Se realiza la busqueda  de la promocion  por medio de fecha-->
+<form class="form-search">
+  <div class="input-append">
+  <input center type="date" id="fecha" name="fecha" placeholder= "Buscar por fecha"> 
+  <button type="submit">Buscar</button>
+       </div>
+</form> 
 
 <table>
   <thead>
     <tr>
+      <th>Fecha</th>
       <th>Client</th>
       <th>Employee</th>
-      <th>Fecha</th>
-      <th>Mediocomunicacion</th>
+
+
       <th>Acuerdo</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
+ 
   <tbody>
     <% @promotions.each do |promotion| %>
       <tr>
-        <td><%= promotion.client_id %></td>
-        <td><%= promotion.employee_id %></td>
         <td><%= promotion.fecha %></td>
-        <td><%= promotion.medioComunicacion %></td>
+
+        <td><%= promotion.client.nombre %></td>
+            <!--Se colocan un if para decicion donde si no existe un el empleado se colocora en la celda Empleado no asociado-->
+        <% if !promotion.employee.nil? %>
+           <td><%= promotion.employee.nombre %></td>
+           <% else %>
+             <td>Empleado no asociado</td>
+        <% end %>
+       
         <td><%= promotion.acuerdo %></td>
-        <td><%= link_to 'Show', promotion %></td>
-        <td><%= link_to 'Edit', edit_promotion_path(promotion) %></td>
-        <td><%= link_to 'Destroy', promotion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', promotion %></td>
+        <td><%= link_to 'Editar', edit_promotion_path(promotion) %></td>
+        <td><%= link_to 'Eliminar', promotion, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
